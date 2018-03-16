@@ -24,6 +24,11 @@ module.exports = {
                 }, {
                     loader: "less-loader"
                 }]
+            },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: "babel-loader"
             }
         ]
     },
