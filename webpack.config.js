@@ -15,14 +15,25 @@ module.exports = {
 
     module: {
         rules: [
-          {
-            test: [ /\.vert$/, /\.frag$/ ],
-            use: 'raw-loader'
-          }
+            {
+                test: [ /\.vert$/, /\.frag$/ ],
+                use: 'raw-loader'
+            },
+            {
+                test: /\.less$/,
+                use: [{
+                    loader: "style-loader"
+                }, {
+                    loader: "css-loader"
+                }, {
+                    loader: "less-loader"
+                }]
+            }
         ]
     },
 
     devServer: {
+        inline: true,
         contentBase: "./pub"
     }
 
