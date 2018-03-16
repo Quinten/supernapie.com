@@ -16,10 +16,6 @@ module.exports = {
     module: {
         rules: [
             {
-                test: [ /\.vert$/, /\.frag$/ ],
-                use: 'raw-loader'
-            },
-            {
                 test: /\.less$/,
                 use: [{
                     loader: "style-loader"
