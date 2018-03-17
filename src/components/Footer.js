@@ -7,9 +7,10 @@ const Footer = () => {
         <footer>
             <div className="content-wrapper">
                 <div className="contact">
-                    <Link to='/contact'>
+                    <p>Wanna get in touch?</p>
+                    <Link to='/contact' className="btn">
                         <i className="fas fa-rocket fa-lg"></i>
-                        <span>Contact</span>
+                        <span> Make contact</span>
                     </Link>
                 </div>
                 <div className="copyright">

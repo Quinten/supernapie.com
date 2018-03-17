@@ -8,13 +8,22 @@ body {
     margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
     color: @color-theme-highlight;
+    font-family: 'Nunito', sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+    color: @color-theme-subtitle;
     font-family: 'Nunito', sans-serif;
 }
 
 a {
     .lib-link();
+}
+
+.ta-center {
+    text-align: center;
 }
 
 // sticky footer
@@ -80,6 +89,7 @@ main {
 header {
     background: @color-theme-highlight;
     color: @color-theme-background;
+    border-bottom: 5px @color-theme-highlight-shade solid;
 
     a {
         .lib-link(
@@ -127,4 +137,56 @@ header {
 
 .fa-gamepad {
     transform: rotate(-45deg);
+}
+
+// buttons
+
+button {
+    box-sizing: content-box;
+    font-family: 'Nunito';
+    font-size: 1rem;
+    padding: .5em 1em;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 0 5px 0 @color-theme-highlight-shade;
+    background: @color-theme-highlight;
+    color: @color-theme-background;
+    cursor: pointer;
+}
+
+a.btn,
+a.btn:hover,
+a.btn:active,
+a.btn:link,
+a.btn:visited {
+    display: inline-block;
+    box-sizing: border-box;
+    font-family: 'Nunito';
+    font-size: 1rem;
+    padding: .5em 1em;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 0 5px 0 @color-theme-highlight-shade;
+    background: @color-theme-highlight;
+    color: @color-theme-background;
+    text-decoration: none;
+}
+
+button:hover,
+a.btn:hover {
+    margin-top: 1px;
+    margin-bottom: -1px;
+    box-shadow: 0 4px 0 @color-theme-highlight-shade;
+}
+
+button:active,
+a.btn:active {
+    margin-top: 4px;
+    margin-bottom: -4px;
+    box-shadow: 0 1px 0 @color-theme-highlight-shade;
+}
+
+button:focus,
+a.btn:focus {
+    outline: none;
 }
