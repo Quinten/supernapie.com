@@ -1,3 +1,16 @@
+@import "_var.less";
+@import "_lib.less";
+
+body {
+    background: @color-theme-background;
+    color: @color-theme-text;
+    font-family: sans-serif;
+}
+
 h1 {
-    color: green;
+    color: @color-theme-highlight;
+}
+
+a {
+    .lib-link();
 }
