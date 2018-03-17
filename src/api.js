@@ -5,7 +5,6 @@ const GamesAPI = {
     { url: 'daves-disk', name: "Dave's Disk", description: "Lorem" },
     { url: 'dead-sticks', name: "Dead Sticks", description: "Lorem" },
     { url: 'woordpad', name: "Woordpad", description: "Lorem" },
-    { url: 'dead-sticks', name: "Dead Sticks", description: "Lorem" },
     { url: 'euphrosine-wants-ten-dots', name: "Euphrosine wants ten dots", description: "Lorem" }
   ],
   all: function() { return this.games},
