@@ -1,20 +1,14 @@
-// A simple data API that will be used to get the data for our
-// components. On a real website, a more robust data fetching
-// solution would be more appropriate.
-const PlayerAPI = {
-  players: [
-    { number: 1, name: "Ben Blocker", position: "G" },
-    { number: 2, name: "Dave Defender", position: "D" },
-    { number: 3, name: "Sam Sweeper", position: "D" },
-    { number: 4, name: "Matt Midfielder", position: "M" },
-    { number: 5, name: "William Winger", position: "M" },
-    { number: 6, name: "Fillipe Forward", position: "F" }
+const GamesAPI = {
+  games: [
+    { url: 'unmatch', name: "Unmatch", description: "Lorem" },
+    { url: 'daves-disk', name: "Daves Disk", description: "Lorem" },
+    { url: 'dead-sticks', name: "Dead Sticks", description: "Lorem" }
   ],
-  all: function() { return this.players},
-  get: function(id) {
-    const isPlayer = p => p.number === id
-    return this.players.find(isPlayer)
+  all: function() { return this.games},
+  get: function(url) {
+    const isGame = g => g.url === url
+    return this.games.find(isGame)
   }
 }
 
-export default PlayerAPI
+export default GamesAPI
