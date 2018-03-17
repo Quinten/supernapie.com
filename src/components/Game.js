@@ -1,6 +1,5 @@
 import React from 'react'
 import GamesAPI from '../api'
-import { Link } from 'react-router-dom'
 
 const Game = (props) => {
     const game = GamesAPI.get(props.match.params.url)
@@ -11,7 +10,6 @@ const Game = (props) => {
         <div>
             <h1>{game.name}</h1>
             <p>{game.description}</p>
-            <Link to='/games'>Back</Link>
         </div>
     )
 }

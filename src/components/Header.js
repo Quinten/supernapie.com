@@ -2,15 +2,27 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Header = () => (
-  <header>
-    <nav>
-      <ul>
-        <li><Link to='/'>Home</Link></li>
-        <li><Link to='/games'>Games</Link></li>
-        <li><Link to='/contact'>Contact</Link></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <div className="content-wrapper">
+            <nav>
+                <ul>
+                    <li>
+                        <Link to='/'>
+                            <i className="fas fa-chess-knight"></i>
+                            <span>Supernapie</span>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to='/games'>
+                            <i className="fas fa-angle-down fa-xs"></i>
+                            <span>Games</span>
+                            <i className="fas fa-gamepad"></i>
+                        </Link>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 )
 
 export default Header

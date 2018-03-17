@@ -5,13 +5,15 @@ import Games from './Games'
 import Contact from './Contact'
 
 const Main = () => (
-  <main>
-    <Switch>
-      <Route exact path='/' component={Home}/>
-      <Route path='/games' component={Games}/>
-      <Route path='/contact' component={Contact}/>
-    </Switch>
-  </main>
+    <main>
+        <div className="content-wrapper">
+            <Switch>
+                <Route exact path='/' component={Home}/>
+                <Route path='/games' component={Games}/>
+                <Route path='/contact' component={Contact}/>
+            </Switch>
+        </div>
+    </main>
 )
 
 export default Main

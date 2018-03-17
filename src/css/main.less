@@ -5,7 +5,7 @@ body {
     background: @color-theme-background;
     color: @color-theme-text;
     font-family: 'Open Sans', sans-serif;
-    padding: 1rem;
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -15,4 +15,116 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     .lib-link();
+}
+
+// sticky footer
+
+html, body, #root {
+    height: 100%;
+}
+
+.page-wrapper {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    min-height: 100%;
+}
+
+header, footer {
+    -webkit-flex: initial;
+    flex: initial;
+}
+
+main {
+    -webkit-flex: 1 0 auto;
+    flex: 1 0 auto;
+}
+
+// wrappers
+
+.content-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+@media (min-width: 760px) {
+
+    .content-wrapper {
+        padding: 0 2rem;
+    }
+}
+
+// footer
+
+.copyright {
+    text-align: center;
+    padding: 2rem 0;
+    color: @color-theme-hint;
+}
+
+.contact {
+    text-align: center;
+    padding: 2rem 0;
+
+    span {
+        display: inline-block;
+        margin: 0 .5em;
+    }
+}
+
+// header
+
+header {
+    background: @color-theme-highlight;
+    color: @color-theme-background;
+
+    a {
+        .lib-link(
+            @_link-color: @color-theme-background,
+            @_link-text-decoration: none,
+            @_link-color-visited: @color-theme-background,
+            @_link-text-decoration-visited: none,
+            @_link-color-hover: lighten(@color-theme-highlight, 25%),
+            @_link-text-decoration-hover: none,
+            @_link-color-active: lighten(@color-theme-highlight, 25%),
+            @_link-text-decoration-active: none
+        );
+    }
+
+    nav {
+        padding: 1rem 0;
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.25rem;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            .lib-clearfix();
+
+            li {
+                display: inline-block;
+
+                span {
+                    display: inline-block;
+                    margin: 0 .5em;
+                }
+
+                &:first-child {
+                    float: left;
+                }
+
+                &:last-child {
+                    float: right;
+                }
+            }
+        }
+    }
+}
+
+.fa-gamepad {
+    transform: rotate(-45deg);
 }
