@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="content-wrapper">
                 <div className="contact">
                     <Link to='/contact'>
-                        <i className="fas fa-rocket"></i>
+                        <i className="fas fa-rocket fa-lg"></i>
                         <span>Contact</span>
                     </Link>
                 </div>

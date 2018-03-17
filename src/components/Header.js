@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Logo from './Logo'
 
 const Header = () => (
     <header>
@@ -8,7 +9,7 @@ const Header = () => (
                 <ul>
                     <li>
                         <Link to='/'>
-                            <i className="fas fa-chess-knight"></i>
+                            <Logo />
                             <span>Supernapie</span>
                         </Link>
                     </li>
