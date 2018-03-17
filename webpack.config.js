@@ -44,7 +44,10 @@ module.exports = {
 
     devServer: {
         inline: true,
-        contentBase: "./pub"
+        contentBase: "./pub",
+        historyApiFallback: {
+            index: 'index.html'
+        }
     }
 
 };
