@@ -1,4 +1,8 @@
-**Unmatch is a puzzle game where you make combinations of 3 tiles with matching or unmatching shapes, colors or number of shapes. Complete the tutorials and unlock a level editor, to make your own levels and beat your own highscore.**
+**Unmatch is a puzzle game where you have to make combinations of 3 tiles with matching or unmatching shapes, colors or number of shapes.** 
+
+Complete the tutorials and unlock a level editor, to make your own levels and beat your own highscore.
+
+## More hints
 
 Swap tiles and align combinations of 3 tiles in rows or columns where each characteristic (shape, color or number) is either completely different or exactly the same. If one characteristic matches another characteristic can unmatch.
 
