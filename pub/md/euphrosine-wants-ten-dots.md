@@ -1,4 +1,4 @@
-**Euphrosine has set her mind on some new dots and is on hunt to catch dice and steal their dots.**
+**Euphrosine has set her mind on some new dots and is out on a hunt to catch cute dice and steal their dots.**
 
 You play as the ladybug Euphrosine. She can run, jump, climb and float. Euphrosine likes dice and wants to collect their dots. When she catches a dice, a dot will appear on her back. The game ends when she collected 10 dots.
 
