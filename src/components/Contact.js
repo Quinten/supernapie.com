@@ -23,7 +23,7 @@ const Contact = () => (
             </li>
             <li>
                 <a href="https://github.com/Quinten">
-                    <span class="social-icon"><i className="fab fa-github"></i></span>
+                    <span class="social-icon"><i className="fab fa-github-alt"></i></span>
                     <span>Checkout Quinten's code on Github</span>
                 </a>
             </li>
