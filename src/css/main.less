@@ -59,7 +59,7 @@ main {
     box-sizing: border-box;
 }
 
-@media (min-width: 760px) {
+@media (min-width: 769px) {
 
     .content-wrapper {
         padding: 0 2rem;
@@ -137,6 +137,10 @@ header {
 
 .fa-gamepad {
     transform: rotate(-45deg);
+
+    h1 & {
+        transform: rotate(45deg);
+    }
 }
 
 // buttons
@@ -189,4 +193,137 @@ a.btn:active {
 button:focus,
 a.btn:focus {
     outline: none;
+}
+
+// social links
+
+.social-links {
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+
+        li {
+            display: block;
+            margin: 4rem 0 2rem;
+
+            a {
+                .lib-link(
+                    @_link-color: @color-theme-text,
+                    @_link-text-decoration: none,
+                    @_link-color-visited: @color-theme-text,
+                    @_link-text-decoration-visited: none,
+                    @_link-color-hover: @color-theme-text,
+                    @_link-text-decoration-hover: none,
+                    @_link-color-active: @color-theme-text,
+                    @_link-text-decoration-active: none
+                );
+                display: inline-block;
+                position: relative;
+                background: @color-theme-white;
+                border-radius: 5px;
+                border: 1px @color-theme-line solid;
+                transition: border-color .5s ease-out;
+                width: 288px;
+                box-sizing: border-box;
+
+                &:before {
+                    content: '';
+                    background: @color-theme-line;
+                    transition: background .5s ease-out;
+                    display: block;
+                    position: absolute;
+                    top: -2rem;
+                    left: 50%;
+                    margin-left: -2rem;
+                    width: 4rem;
+                    height: 4rem;
+                    border-radius: 2rem;
+                }
+
+                &:after {
+                    content: '';
+                    background: @color-theme-white;
+                    display: block;
+                    position: absolute;
+                    top: ~"calc(-2rem + 1px)";
+                    left: 50%;
+                    margin-left: ~"calc(-2rem + 1px)";
+                    width: ~"calc(4rem - 2px)";
+                    height: ~"calc(4rem - 2px)";
+                    border-radius: ~"calc(2rem - 1px)";
+                }
+
+                span.social-icon {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    font-size: 1.5rem;
+                    line-height: 1.5rem;
+                    position: absolute;
+                    z-index: 4;
+                    top: -1rem;
+                    left: 50%;
+                    margin-left: -.75rem;
+
+                    + span {
+                        display: block;
+                        padding: 1rem;
+                        background: @color-theme-white;
+                        position: relative;
+                        z-index: 3;
+                        border-radius: 7px;
+                        text-decoration: underline;
+                    }
+                }
+
+                &:hover, &:active {
+                    border-color: @color-theme-highlight;
+
+                    &:before {
+                        background: @color-theme-highlight;
+                    }
+
+                    span.social-icon {
+
+                        + span {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 769px) {
+
+    .social-links {
+
+        ul {
+            .lib-clearfix();
+
+            li {
+                width: 50%;
+                float: left;
+            }
+        }
+    }
+}
+
+.fa-instagram {
+    color: #c13584;
+}
+
+.fa-twitter {
+    color: #1da1f2;
+}
+
+.fa-slack-hash {
+    color: #3eb991;
+}
+
+.fa-github-alt {
+    color: #6e5494;
 }
