@@ -26,6 +26,11 @@ a {
     text-align: center;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 // sticky footer
 
 html, body, #root {
@@ -62,7 +67,7 @@ main {
 @media (min-width: 769px) {
 
     .content-wrapper {
-        padding: 0 2rem;
+        padding: 0 4rem;
     }
 }
 
@@ -176,6 +181,14 @@ a.btn:visited {
     text-decoration: none;
 }
 
+button,
+a.btn {
+
+    svg + span {
+        margin: 0 0 0 .5em;
+    }
+}
+
 button:hover,
 a.btn:hover {
     margin-top: 1px;
@@ -193,6 +206,23 @@ a.btn:active {
 button:focus,
 a.btn:focus {
     outline: none;
+}
+
+a.btn.game-btn,
+a.btn.game-btn:hover,
+a.btn.game-btn:active,
+a.btn.game-btn:link,
+a.btn.game-btn:visited {
+    box-shadow: 0 5px 0 @color-theme-cta-shade;
+    background: @color-theme-cta;
+}
+
+a.btn.game-btn:hover {
+    box-shadow: 0 4px 0 @color-theme-cta-shade;
+}
+
+a.btn.game-btn:active {
+    box-shadow: 0 1px 0 @color-theme-cta-shade;
 }
 
 // social links
@@ -326,4 +356,20 @@ a.btn:focus {
 
 .fa-github-alt {
     color: #6e5494;
+}
+
+.game-btn-wrapper {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.game-poster {
+    margin: 0 -1rem;
+}
+
+@media (min-width: 769px) {
+
+    .game-poster {
+        margin: 0 -4rem;
+    }
 }
