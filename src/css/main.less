@@ -373,3 +373,80 @@ a.btn.game-btn:active {
         margin: 0 -4rem;
     }
 }
+
+ul.games-list {
+    margin: 2rem 0 4rem;
+    padding: 0;
+    list-style: none;
+    .lib-clearfix();
+
+    li {
+        display: block;
+        margin-bottom: 3rem;
+    }
+
+    a {
+        display: block;
+        text-align: center;
+        font-family: 'Nunito';
+        font-size: 1.25rem;
+
+        .lib-link(
+            @_link-color: @color-theme-highlight,
+            @_link-text-decoration: none,
+            @_link-color-visited: @color-theme-highlight,
+            @_link-text-decoration-visited: none,
+            @_link-color-hover: @color-theme-highlight-shade,
+            @_link-text-decoration-hover: none,
+            @_link-color-active: @color-theme-highlight-shade,
+            @_link-text-decoration-active: none
+        );
+
+        img {
+            display: block;
+        }
+
+        span {
+            display: block;
+            margin: 1rem 0;
+        }
+    }
+}
+
+@media (min-width: 417px) {
+
+    .games-list {
+
+        li {
+            width: 50%;
+            float: left;
+            box-sizing: border-box;
+
+            &:nth-child(odd) {
+                clear: both;
+                padding-right: .5rem;
+            }
+
+            &:nth-child(even) {
+                padding-left: .5rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 769px) {
+
+    .games-list {
+
+        li {
+
+            &:nth-child(odd) {
+                padding-right: 2rem;
+            }
+
+            &:nth-child(even) {
+                padding-left: 2rem;
+            }
+        }
+    }
+}
