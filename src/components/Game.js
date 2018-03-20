@@ -10,6 +10,8 @@ const Game = (props) => {
         return <div>Sorry, but the game was not found</div>
     }
 
+    document.title = 'Supernapie: ' + game.name;
+
     let description = game.description;
     fetch('/md/' + game.url + '.md')
         .then(response => response.text())
