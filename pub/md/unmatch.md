@@ -17,3 +17,16 @@ Tile one has two circles, tile two has three circles, tile three has one circle.
 All tiles are blue. The first two tiles have both two triangles, but the last one has two squares.
 
 All 3 tiles have one circle. Two tiles are red, but the third one is yellow.
+
+## Updates
+
+### v0.0.2 update
+
+- fixed preloader
+- startscreen now correctly goes to leveleditor (if unlocked)
+- 1 point is subtracted from your score when making a wrong blind guess
+- added a trash button to reset your progress and scores
+
+
+
+
