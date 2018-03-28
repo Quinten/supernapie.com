@@ -27,7 +27,7 @@ const Game = (props) => {
         <div>
             <div className="game-poster">
                 <a href={'https://'+game.url+'.supernapie.com'}>
-                    <img src={'/img/'+game.url+'-poster.png'} alt={'Play '+game.name} title={'Play '+game.name} />
+                    <img src={'/img/'+game.url+'-poster.jpg'} alt={'Play '+game.name} title={'Play '+game.name} />
                 </a>
             </div>
             <div className="game-btn-wrapper">

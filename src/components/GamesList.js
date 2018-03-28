@@ -12,7 +12,7 @@ const GamesList = () => {
                     GamesAPI.all().map(g => (
                         <li key={g.url}>
                             <Link to={`/games/${g.url}`}>
-                                <img src={'/img/'+g.url+'-thumb.png'} alt={g.name} title={g.name} />
+                                <img src={'/img/'+g.url+'-thumb.jpg'} alt={g.name} title={g.name} />
                                 <span>{g.name}</span>
                             </Link>
                         </li>

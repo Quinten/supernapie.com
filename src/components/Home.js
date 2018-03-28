@@ -6,7 +6,7 @@ const Home = () => {
     return (
       <div>
         <div className="game-poster">
-            <img src={'/img/supernapie-poster.png'} alt="Supernapie test devices" />
+            <img src={'/img/supernapie-poster.jpg'} alt="Supernapie test devices" />
         </div>
         <h1 className="ta-center"><Logo /> <span>Supernapie</span></h1>
         <h2 className="ta-center">Play free web games on mobile and desktop.</h2>
