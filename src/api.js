@@ -1,6 +1,7 @@
 const GamesAPI = {
   games: [
     { url: 'unmatch', name: "Unmatch", description: "" },
+    //{ url: 'untitled', name: "Untitled", description: "" },
     { url: 'daves-disk', name: "Dave's Disk", description: "" },
     { url: 'dead-sticks', name: "dead sticks", description: "" },
     { url: 'euphrosine-wants-ten-dots', name: "Euphrosine wants ten dots", description: "" }
