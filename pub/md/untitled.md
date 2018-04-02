@@ -16,6 +16,6 @@ Touch: hold one finger and drag to simulate arrow keys; touch with a second fing
 
 ### Background info
 
-This game was a test for mechanics that later were used in Dave's Disk. I also wanted to experiment with the multiplayer stuff which is done with the socket.io. But it is not scalable to fit a lot of players.
+This game was a test for mechanics that later were used in Dave's Disk. I also wanted to experiment with the multiplayer stuff which is done with the socket.io framework. But it is not scalable to fit a lot of players.
 
 Why Untitled as a title for a game? Doesn't that make your game undiscoverable on the internet? While that's true, it's never my intention to reach a great mass of players. A game can also be a hidden realm, an undiscovered paradise, where you can be in peace. It's like when you are sitting on a bench in a quiet area of a park or forest and realise there is just nobody there.
