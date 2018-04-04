@@ -1,11 +1,11 @@
 const GamesAPI = {
   games: [
-    { url: 'unmatch', name: "Unmatch", description: "" },
-    { url: 'untitled', name: "Untitled", description: "" },
-    { url: 'daves-disk', name: "Dave's Disk", description: "" },
-    { url: 'dead-sticks', name: "dead sticks", description: "" },
-    { url: 'euphrosine-wants-ten-dots', name: "Euphrosine wants ten dots", description: "" },
-    { url: 'graves-of-salad', name: "Graves of Salad", description: "" }
+    { url: 'unmatch', name: "Unmatch", description: "Unmatch is a puzzle game where you have to make combinations of 3 tiles with matching or unmatching shapes, colors or number of shapes." },
+    { url: 'untitled', name: "Untitled", description: "Untitled is a multiplayer experiment. You can explore the small world on your own, but when there are others online you can play a game of tag." },
+    { url: 'daves-disk', name: "Dave's Disk", description: "When Dave Flimsy, a game developer for a large company, opens his mailbox in the morning, he finds a rather unpleasant message. It's the start of a horrible day." },
+    { url: 'dead-sticks', name: "dead sticks", description: "'dead sticks' is an abstract and minimalisitc puzzle game with physics based on verlet integration." },
+    { url: 'euphrosine-wants-ten-dots', name: "Euphrosine wants ten dots", description: "Euphrosine has set her mind on some new dots and is out on a hunt to catch cute dice and steal their dots." },
+    { url: 'graves-of-salad', name: "Graves of Salad", description: "It's the night after the day of judgement and the salads have risen from their graves. They are hungry for your brains. Can you hold off this onslaught of lettuce?" }
   ],
   all: function() { return this.games},
   get: function(url) {
