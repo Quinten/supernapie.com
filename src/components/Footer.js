@@ -6,13 +6,6 @@ const Footer = () => {
     return (
         <footer>
             <div className="content-wrapper">
-                <div className="contact">
-                    <p>Wanna get in touch?</p>
-                    <Link to='/contact' className="btn">
-                        <i className="fas fa-rocket fa-lg"></i>
-                        <span> Make contact</span>
-                    </Link>
-                </div>
                 <div className="copyright">
                     <small>&copy; {year} Quinten Clause</small>
                 </div>
