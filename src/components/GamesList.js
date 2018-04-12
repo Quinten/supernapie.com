@@ -15,14 +15,14 @@ const GamesList = () => {
                 {
                     GamesAPI.all().map(g => (
                         <li key={g.url}>
-                            <div className="game-tile">
-                                <Link to={`/games/${g.url}`} className="thumb">
-                                    <img src={'/img/'+g.url+'-thumb.jpg'} alt={g.name} title={g.name} />
+                            <div className="game-tile" itemScope itemType="http://schema.org/VideoGame">
+                                <Link to={`/games/${g.url}`} className="thumb" itemProp="url">
+                                    <img src={'/img/'+g.url+'-thumb.jpg'} alt={g.name} title={g.name} itemProp="image" />
                                 </Link>
-                                <Link to={`/games/${g.url}`}>
-                                    <span>{g.name}</span>
+                                <Link to={`/games/${g.url}`} itemProp="url">
+                                    <span itemProp="name">{g.name}</span>
                                 </Link>
-                                <p>{g.description}</p>
+                                <p itemProp="description">{g.description}</p>
                             </div>
                         </li>
                     ))

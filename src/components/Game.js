@@ -27,20 +27,20 @@ const Game = (props) => {
         });
 
     return (
-        <div>
+        <div itemScope itemType="http://schema.org/VideoGame">
             <div className="game-poster">
-                <a href={'https://'+game.url+'.supernapie.com'}>
-                    <img src={'/img/'+game.url+'-poster.jpg'} alt={'Play '+game.name} title={'Play '+game.name} />
+                <a href={'https://'+game.url+'.supernapie.com'} itemProp="installUrl">
+                    <img src={'/img/'+game.url+'-poster.jpg'} alt={'Play '+game.name} title={'Play '+game.name} itemProp="image" />
                 </a>
             </div>
             <div className="game-btn-wrapper">
-                <a className="btn game-btn" href={'https://'+game.url+'.supernapie.com'}>
+                <a className="btn game-btn" href={'https://'+game.url+'.supernapie.com'} itemProp="installUrl">
                     <i className="fas fa-gamepad fa-lg"></i>
                     <span>Play game</span>
                 </a>
             </div>
-            <h1>{game.name}</h1>
-            <div id="game-description"></div>
+            <h1 itemProp="name">{game.name}</h1>
+            <div id="game-description" itemProp="description"></div>
         </div>
     )
 }
