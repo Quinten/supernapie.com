@@ -10,9 +10,12 @@ const Game = (props) => {
         return <div>Sorry, but the game was not found</div>
     }
 
-    document.title = 'Supernapie: ' + game.name;
+    document.title = game.name + ' - a Supernapie game';
 
     let description = game.description;
+
+    document.querySelector('meta[name="description"]').setAttribute("content", description);
+
     fetch('/md/' + game.url + '.md')
         .then(response => response.text())
         .then((result) => {

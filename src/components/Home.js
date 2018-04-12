@@ -3,6 +3,7 @@ import Logo from './Logo'
 
 const Home = () => {
     document.title = 'Supernapie: Play free web games';
+    document.querySelector('meta[name="description"]').setAttribute("content", 'Play free web games on mobile and desktop. Supernapie games are carefully built by myself, Quinten Clause.');
     return (
       <div>
         <div className="game-poster">

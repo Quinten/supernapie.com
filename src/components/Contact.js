@@ -1,10 +1,14 @@
 import React from 'react'
 
 const Contact = () => {
-    document.title = 'Supernapie: Contact';
+    document.title = 'Make contact with Supernapie';
+
+    document.querySelector('meta[name="description"]').setAttribute("content", 'If you have any questions or feedback, you can find me on these social media channels.');
+
     return (
         <div>
-        <h1 className="ta-center"><i className="fas fa-rocket"></i> <span>Make contact</span></h1>
+            <h1 className="ta-center"><i className="fas fa-rocket"></i> <span>Make contact</span></h1>
+            <p className="ta-center">If you have any questions or feedback, you can find me on these social media channels.</p>
             <div className="social-links">
                 <ul>
                     <li>
