@@ -26,9 +26,17 @@ const Game = (props) => {
     return (
         <div itemScope itemType="http://schema.org/VideoGame">
             <Helmet>
-                <title>{game.name}</title>
+                <title>{game.name} - a Supernapie game</title>
+                <meta property="og:title" content={game.name+'- a Supernapie game'} />
+                <meta property="og:type" content="game" />
+                <meta property="og:url" content={'https://supernapie.com/games/'+game.url} />
                 <meta name="description" content={game.description} />
+                <meta property="og:description" content={game.description} />
                 <meta property="og:image" content={'/img/'+game.url+'-poster.jpg'} />
+                <meta property="og:image:width" content="1920" />
+                <meta property="og:image:height" content="640" />
+                <meta property="og:image:type" content="image/jpeg" />
+                <meta property="fb:app_id" content="1418768124974325" />
             </Helmet>
             <div className="game-poster">
                 <a href={'https://'+game.url+'.supernapie.com'} itemProp="installUrl">

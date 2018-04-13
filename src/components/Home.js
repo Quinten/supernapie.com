@@ -3,12 +3,22 @@ import Logo from './Logo'
 import { Helmet } from 'react-helmet'
 
 const Home = () => {
+    let title = 'Supernapie: Play free web games';
+    let description = 'Play free web games on mobile and desktop. Supernapie games are carefully built by myself, Quinten Clause.';
     return (
       <div>
         <Helmet>
-            <title>{'Supernapie: Play free web games'}</title>
-            <meta name="description" content={'Play free web games on mobile and desktop. Supernapie games are carefully built by myself, Quinten Clause.'} />
+            <title>{title}</title>
+            <meta property="og:title" content={title} />
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content={'https://supernapie.com'} />
+            <meta name="description" content={description} />
+            <meta property="og:description" content={description} />
             <meta property="og:image" content={'/img/supernapie-poster.jpg'} />
+            <meta property="og:image:width" content="1920" />
+            <meta property="og:image:height" content="640" />
+            <meta property="og:image:type" content="image/jpeg" />
+            <meta property="fb:app_id" content="1418768124974325" />
         </Helmet>
         <div className="game-poster">
             <img src={'/img/supernapie-poster.jpg'} alt="Supernapie test devices" />
