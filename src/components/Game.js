@@ -32,7 +32,7 @@ const Game = (props) => {
                 <meta property="og:url" content={'https://supernapie.com/games/'+game.url} />
                 <meta name="description" content={game.description} />
                 <meta property="og:description" content={game.description} />
-                <meta property="og:image" content={'/img/'+game.url+'-poster.jpg'} />
+                <meta property="og:image" content={'https://supernapie.com/img/'+game.url+'-poster.jpg'} />
                 <meta property="og:image:width" content="1920" />
                 <meta property="og:image:height" content="640" />
                 <meta property="og:image:type" content="image/jpeg" />

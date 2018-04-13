@@ -14,7 +14,7 @@ const Home = () => {
             <meta property="og:url" content={'https://supernapie.com'} />
             <meta name="description" content={description} />
             <meta property="og:description" content={description} />
-            <meta property="og:image" content={'/img/supernapie-poster.jpg'} />
+            <meta property="og:image" content={'https://supernapie.com/img/supernapie-poster.jpg'} />
             <meta property="og:image:width" content="1920" />
             <meta property="og:image:height" content="640" />
             <meta property="og:image:type" content="image/jpeg" />

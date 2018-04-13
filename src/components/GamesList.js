@@ -15,7 +15,7 @@ const GamesList = () => {
                 <meta property="og:url" content={'https://supernapie.com/games'} />
                 <meta name="description" content={description} />
                 <meta property="og:description" content={description} />
-                <meta property="og:image" content={'/img/games-banner-cropped.jpg'} />
+                <meta property="og:image" content={'https://supernapie.com/img/games-banner-cropped.jpg'} />
                 <meta property="og:image:width" content="1920" />
                 <meta property="og:image:height" content="640" />
                 <meta property="og:image:type" content="image/jpeg" />
