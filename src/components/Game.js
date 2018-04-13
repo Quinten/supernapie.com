@@ -28,7 +28,7 @@ const Game = (props) => {
             <Helmet>
                 <title>{game.name}</title>
                 <meta name="description" content={game.description} />
-                <meta name="og:image" content={'/img/'+game.url+'-poster.jpg'} />
+                <meta property="og:image" content={'/img/'+game.url+'-poster.jpg'} />
             </Helmet>
             <div className="game-poster">
                 <a href={'https://'+game.url+'.supernapie.com'} itemProp="installUrl">

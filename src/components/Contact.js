@@ -8,7 +8,7 @@ const Contact = () => {
             <Helmet>
                 <title>{'Make contact with Supernapie'}</title>
                 <meta name="description" content={'If you have any questions or feedback, you can find me on these social media channels.'} />
-                <meta name="og:image" content={'/img/supernapie-poster.jpg'} />
+                <meta property="og:image" content={'/img/supernapie-poster.jpg'} />
             </Helmet>
             <h1 className="ta-center"><i className="fas fa-rocket"></i> <span>Make contact</span></h1>
             <p className="ta-center">If you have any questions or feedback, you can find me on these social media channels.</p>

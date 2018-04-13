@@ -8,7 +8,7 @@ const Home = () => {
         <Helmet>
             <title>{'Supernapie: Play free web games'}</title>
             <meta name="description" content={'Play free web games on mobile and desktop. Supernapie games are carefully built by myself, Quinten Clause.'} />
-            <meta name="og:image" content={'/img/supernapie-poster.jpg'} />
+            <meta property="og:image" content={'/img/supernapie-poster.jpg'} />
         </Helmet>
         <div className="game-poster">
             <img src={'/img/supernapie-poster.jpg'} alt="Supernapie test devices" />
