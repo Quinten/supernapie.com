@@ -26,6 +26,12 @@ const Contact = () => {
             <div className="social-links">
                 <ul>
                     <li>
+                        <a href="https://www.facebook.com/supernapie/">
+                            <span className="social-icon"><i className="fab fa-facebook-f"></i></span>
+                            <span>Like Supernapie on Facebook</span>
+                        </a>
+                    </li>
+                    <li>
                         <a href="https://twitter.com/supernapie">
                             <span className="social-icon"><i className="fab fa-twitter"></i></span>
                             <span>Follow Supernapie on Twitter</span>
@@ -35,12 +41,6 @@ const Contact = () => {
                         <a href="https://instagram.com/supernapie">
                             <span className="social-icon"><i className="fab fa-instagram"></i></span>
                             <span>View Supernapie on Instagram</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://supernapie.slack.com">
-                            <span className="social-icon"><i className="fab fa-slack-hash"></i></span>
-                            <span>Join the Supernapie Slack space</span>
                         </a>
                     </li>
                     <li>
