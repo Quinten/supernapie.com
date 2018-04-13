@@ -1,11 +1,15 @@
 import React from 'react'
 import Logo from './Logo'
+import { Helmet } from 'react-helmet'
 
 const Home = () => {
-    document.title = 'Supernapie: Play free web games';
-    document.querySelector('meta[name="description"]').setAttribute("content", 'Play free web games on mobile and desktop. Supernapie games are carefully built by myself, Quinten Clause.');
     return (
       <div>
+        <Helmet>
+            <title>{'Supernapie: Play free web games'}</title>
+            <meta name="description" content={'Play free web games on mobile and desktop. Supernapie games are carefully built by myself, Quinten Clause.'} />
+            <meta name="og:image" content={'/img/supernapie-poster.jpg'} />
+        </Helmet>
         <div className="game-poster">
             <img src={'/img/supernapie-poster.jpg'} alt="Supernapie test devices" />
         </div>

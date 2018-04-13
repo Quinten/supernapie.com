@@ -2,6 +2,7 @@ import React from 'react'
 const ReactDOM = require('react-dom')
 const ReactMarkdown = require('react-markdown')
 import GamesAPI from '../api'
+import { Helmet } from 'react-helmet'
 
 const Game = (props) => {
 
@@ -10,11 +11,7 @@ const Game = (props) => {
         return <div>Sorry, but the game was not found</div>
     }
 
-    document.title = game.name + ' - a Supernapie game';
-
     let description = game.description;
-
-    document.querySelector('meta[name="description"]').setAttribute("content", description);
 
     fetch('/md/' + game.url + '.md')
         .then(response => response.text())
@@ -28,6 +25,11 @@ const Game = (props) => {
 
     return (
         <div itemScope itemType="http://schema.org/VideoGame">
+            <Helmet>
+                <title>{game.name}</title>
+                <meta name="description" content={game.description} />
+                <meta name="og:image" content={'/img/'+game.url+'-poster.jpg'} />
+            </Helmet>
             <div className="game-poster">
                 <a href={'https://'+game.url+'.supernapie.com'} itemProp="installUrl">
                     <img src={'/img/'+game.url+'-poster.jpg'} alt={'Play '+game.name} title={'Play '+game.name} itemProp="image" />
