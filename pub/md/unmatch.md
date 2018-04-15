@@ -22,7 +22,7 @@ All 3 tiles have one circle. Two tiles are red, but the third one is yellow.
 
 ### v0.0.3 update
 
-Added a service worker, which means that when you add Unmatch to your homescreen you will also be able to play it while you are offline.
+Added a service worker, which means that when you add Unmatch to your homescreen you will also be able to play it while you are offline. So it is now a complete progressive web app. (Apple will users need the latest version of ios 11.3)
 
 ### v0.0.2 update
 
