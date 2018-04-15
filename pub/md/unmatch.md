@@ -1,4 +1,4 @@
-**Unmatch is a puzzle game where you have to make combinations of 3 tiles with matching or unmatching shapes, colors or number of shapes.** 
+**Unmatch is a puzzle game where you have to make combinations of 3 tiles with matching or unmatching shapes, colors or number of shapes.**
 
 Complete the tutorials and unlock a level editor, to make your own levels and beat your own highscore.
 
@@ -19,6 +19,10 @@ All tiles are blue. The first two tiles have both two triangles, but the last on
 All 3 tiles have one circle. Two tiles are red, but the third one is yellow.
 
 ## Updates
+
+### v0.0.3 update
+
+Added a service worker, which means that when you add Unmatch to your homescreen you will also be able to play it while you are offline.
 
 ### v0.0.2 update
 
