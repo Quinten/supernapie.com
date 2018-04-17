@@ -20,7 +20,7 @@ const babel = new BabelPlugin({
 
 module.exports = {
 
-    entry: ['babel-polyfill', './src/index.js'],
+    entry: ['babel-polyfill', 'whatwg-fetch', './src/index.js'],
 
     output: {
         path: path.resolve(__dirname, 'pub/build'),
