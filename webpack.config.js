@@ -9,6 +9,15 @@ const extractLess = new ExtractTextPlugin({
     filename: "[name].css"
 });
 
+const BabelPlugin = require("babel-webpack-plugin");
+
+const babel = new BabelPlugin({
+    test: /\.js$/,
+    presets: ['es2015'],
+    sourceMaps: false,
+    compact: false
+});
+
 module.exports = {
 
     entry: './src/index.js',
@@ -39,7 +48,8 @@ module.exports = {
         ]
     },
     plugins: [
-        extractLess
+        extractLess,
+        babel
     ],
 
     devServer: {

@@ -105,36 +105,83 @@ header a:active {
   color: #fddacc;
   text-decoration: none;
 }
-header nav {
+header .header-wrapper {
   padding: 1rem 0;
   font-family: 'Nunito', sans-serif;
   font-size: 1.25rem;
+}
+header .header-wrapper:before,
+header .header-wrapper:after {
+  content: '';
+  display: table;
+}
+header .header-wrapper:after {
+  clear: both;
+}
+header .header-wrapper .logo {
+  float: left;
+}
+header .header-wrapper .logo span {
+  display: inline-block;
+  margin: 0 .5em;
+}
+header .header-wrapper nav {
+  float: right;
+}
+header .header-wrapper .mobile-toggle {
+  float: right;
+  border: 1px #FFFDF2 solid;
+  border-radius: 3px;
+  padding: 0 .25em;
+  display: none;
 }
 header nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-header nav ul:before,
-header nav ul:after {
-  content: '';
-  display: table;
-}
-header nav ul:after {
-  clear: both;
-}
 header nav ul li {
   display: inline-block;
+  margin-left: 1.5em;
 }
 header nav ul li span {
   display: inline-block;
   margin: 0 .5em;
 }
-header nav ul li:first-child {
-  float: left;
-}
-header nav ul li:last-child {
-  float: right;
+@media (max-width: 640px) {
+  header .header-wrapper .mobile-toggle {
+    display: block;
+  }
+  header .header-wrapper nav {
+    display: none;
+    float: none;
+    clear: both;
+  }
+  header .header-wrapper nav.active {
+    display: block;
+  }
+  header nav {
+    text-align: right;
+    padding-top: 1rem;
+  }
+  header nav ul li {
+    display: block;
+    margin: 0 0 1rem;
+  }
+  header nav ul li a {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row-reverse wrap;
+    flex-flow: row-reverse wrap;
+  }
+  header nav ul li:last-child {
+    margin: 0;
+  }
+  header nav ul li svg {
+    width: 1.25em!important;
+    vertical-align: middle;
+    margin-right: .125em;
+  }
 }
 .fa-gamepad {
   transform: rotate(-45deg);
@@ -316,6 +363,9 @@ a.btn.game-btn:active {
 .fa-twitter {
   color: #1da1f2;
 }
+.fa-facebook-f {
+  color: #3b5998;
+}
 .fa-slack-hash {
   color: #3eb991;
 }
@@ -326,12 +376,58 @@ a.btn.game-btn:active {
   text-align: center;
   margin: 2rem 0;
 }
+.game-banner,
 .game-poster {
   margin: 0 -1rem;
 }
+.game-banner {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.game-banner a {
+  display: block;
+  position: relative;
+  background: #000000;
+}
+.game-banner a img {
+  display: block;
+  position: relative;
+  opacity: .65;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+.game-banner a:hover img {
+  opacity: 1;
+}
+.game-banner .game-banner-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+.game-banner .game-banner-text h2 {
+  color: #FFFDF2;
+  text-shadow: -1px -1px 0 #F97F51, 1px -1px 0 #F97F51, -1px 1px 0 #F97F51, 1px 1px 0 #F97F51;
+}
+.game-banner .game-banner-text h2 .arrow {
+  white-space: nowrap;
+}
 @media (min-width: 769px) {
+  .game-banner,
   .game-poster {
     margin: 0 -4rem;
+  }
+  .game-banner {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
 }
 ul.games-list {
@@ -353,7 +449,6 @@ ul.games-list li {
 }
 ul.games-list a {
   display: block;
-  text-align: center;
   font-family: 'Nunito';
   font-size: 1.25rem;
   color: #F97F51;
@@ -376,9 +471,31 @@ ul.games-list a img {
 }
 ul.games-list a span {
   display: block;
-  margin: 1rem 0;
+  margin: .875rem 0 .75rem;
 }
-@media (min-width: 417px) {
+ul.games-list .game-tile {
+  background: #FFFFFF;
+  border-radius: 5px;
+  border: 1px #F8EFBA solid;
+  overflow: hidden;
+  padding: 0 1rem 1rem;
+  min-height: 100%;
+}
+ul.games-list .game-tile .thumb {
+  display: block;
+  margin: 0 -1rem;
+}
+ul.games-list .game-tile p {
+  margin: 0;
+}
+@media (min-width: 481px) {
+  .games-list {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    align-items: stretch;
+  }
   .games-list li {
     width: 50%;
     float: left;
@@ -398,5 +515,27 @@ ul.games-list a span {
   }
   .games-list li:nth-child(even) {
     padding-left: 2rem;
+  }
+}
+@media (min-width: 961px) {
+  .games-list li {
+    width: 33.33%;
+    float: left;
+    box-sizing: border-box;
+  }
+  .games-list li:nth-child(3n+1) {
+    clear: both;
+    padding-left: 0;
+    padding-right: 1rem;
+  }
+  .games-list li:nth-child(3n+2) {
+    clear: none;
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+  .games-list li:nth-child(3n+3) {
+    clear: none;
+    padding-left: 1rem;
+    padding-right: 0;
   }
 }
