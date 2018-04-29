@@ -1,7 +1,7 @@
 import React from 'react'
 const ReactDOM = require('react-dom')
 const ReactMarkdown = require('react-markdown')
-import GamesAPI from '../api'
+import { GamesAPI } from '../api'
 import { Helmet } from 'react-helmet'
 
 const Game = (props) => {

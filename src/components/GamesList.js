@@ -1,5 +1,5 @@
 import React from 'react'
-import GamesAPI from '../api'
+import { GamesAPI } from '../api'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 

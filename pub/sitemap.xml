@@ -27,4 +27,10 @@
     <url>
         <loc>https://supernapie.com/games/graves-of-salad</loc>
     </url>
+    <url>
+        <loc>https://supernapie.com/blog</loc>
+    </url>
+    <url>
+        <loc>https://supernapie.com/blog/loading-assets-as-data-uri-in-phaser-3</loc>
+    </url>
 </urlset>

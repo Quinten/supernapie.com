@@ -33,15 +33,15 @@ export default class Header extends React.Component {
                         <nav className={ this.state.showMenu ? 'active' : 'closed'}>
                             <ul>
                                 <li>
-                                    <Link to='/'>
-                                        <i className="fas fa-home"></i>
-                                        <span>Home</span>
-                                    </Link>
-                                </li>
-                                <li>
                                     <Link to='/games'>
                                         <i className="fas fa-gamepad"></i>
                                         <span>Games</span>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to='/blog'>
+                                        <i className="fas fa-pencil-alt"></i>
+                                        <span>Blog</span>
                                     </Link>
                                 </li>
                                 <li>
