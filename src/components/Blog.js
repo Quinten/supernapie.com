@@ -42,6 +42,7 @@ const Blog = (props) => {
                 <img src={'/img/'+blog.url+'-poster.jpg'} alt={blog.name} title={blog.name} />
             </div>
             <h1>{blog.name}</h1>
+            <p className="blog-date">{(new Date(blog.date)).toLocaleDateString('en', {year: 'numeric', month: 'long', day: 'numeric'})}</p>
             <div id="game-description"></div>
         </div>
     )
