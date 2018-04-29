@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet'
 
 const BlogsList = () => {
     let title = 'The Supernapie Blog';
-    let description = 'Here on the blog you can find notes and stories about my game developing adventures.';
+    let description = 'Here on the blog you can find notes and stories about my game developing adventures. Some notes are very technical, so be warned.';
     return (
         <div>
             <Helmet>
