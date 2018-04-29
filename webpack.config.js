@@ -57,7 +57,8 @@ module.exports = {
         contentBase: "./pub",
         historyApiFallback: {
             index: 'index.html'
-        }
+        },
+        port: 8009
     }
 
 };
