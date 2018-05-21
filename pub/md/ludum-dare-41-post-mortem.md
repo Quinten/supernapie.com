@@ -20,7 +20,9 @@ Another thing i found out after a couple of days doing votes and feedback, was t
 
 When the voting was almost over, i was still missing the required 20 votes that would unlock my score in the end. So i went on twitter and with the help of some good hash tag tweets, i managed to get my last votes from the community. It also sparked some converstion with other gamedevs. So the last lesson is: **get on twitter and use them hash tags**.
 
-Those were the lessons i learned. In the end i received a lot of feedback, that i can now use as a roadmap to make the game into something i hope to post here in the games section someday.
+Those were the lessons i learned. In the end i received a lot of feedback, that i can now use as a roadmap to make the game into something i hope to post here in the games section someday. And i really hope the next Ludum Dare will fit my schedule.
+
+Looking forward to it!
 
 ### Links
 
