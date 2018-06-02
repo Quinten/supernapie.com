@@ -17,6 +17,7 @@ const GamesAPI = {
 
 const BlogAPI = {
   posts: [
+    { url: 'support-retina-with-phaser-3', name: "Support retina with Phaser 3", description: "You can support retina devices and other pixel ratio's in your Phaser 3 games. In this short blogpost i will explain how and give some tips on how to make your art super crisp.", date: '2018-06-3'},
     { url: 'ludum-dare-41-post-mortem', name: "Ludum Dare 41 post mortem", description: "About a month ago, I participated for the first time with the Ludum Dare game jam. Here is what i learned from it.", date: '2018-05-21'},
     { url: 'loading-assets-as-data-uri-in-phaser-3', name: "Loading assets as data URI's in Phaser 3", description: "In this blogpost i'll explain how you can load the assets of your Phaser 3 game as data URI's, without having to rely on xhr requests.", date: '2018-04-29'}
   ],
