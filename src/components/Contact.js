@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet'
 const Contact = () => {
 
     let title = 'Make contact with Supernapie';
-    let description = 'If you have any questions or feedback, you can find me on these social media channels.';
+    let description = "Supernapie's mission is to make great games, but great games can not be made without feedback. On social media i organise polls where you can vote for new features and other stuff. So you can help making decisions for the games and make them more fun simply by clicking a button. Or if you have ideas for games that you want me to make, i'm also open to that.";
 
     return (
         <div>
@@ -22,7 +22,7 @@ const Contact = () => {
                 <meta property="fb:app_id" content="1418768124974325" />
             </Helmet>
             <h1 className="ta-center"><i className="fas fa-rocket"></i> <span>Make contact</span></h1>
-            <p className="ta-center">{description}</p>
+            <p>{description}</p>
             <div className="social-links">
                 <ul>
                     <li>
