@@ -8,6 +8,7 @@ export default class Header extends React.Component {
         super(props);
         this.state = { showMenu: false }
         this.showMenu = this.showMenu.bind(this);
+        this.hideMenu = this.hideMenu.bind(this);
     }
 
     showMenu() {
