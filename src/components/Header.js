@@ -14,13 +14,17 @@ export default class Header extends React.Component {
         this.setState({ showMenu: !this.state.showMenu })
     }
 
+    hideMenu() {
+        this.setState({ showMenu: false })
+    }
+
     render() {
         return (
             <header>
                 <div className="content-wrapper">
                     <div className="header-wrapper">
                         <div className="logo">
-                            <Link to='/'>
+                            <Link to='/' onClick={this.hideMenu}>
                                 <Logo />
                                 <span>Supernapie</span>
                             </Link>
@@ -33,19 +37,19 @@ export default class Header extends React.Component {
                         <nav className={ this.state.showMenu ? 'active' : 'closed'}>
                             <ul>
                                 <li>
-                                    <Link to='/games'>
+                                    <Link to='/games' onClick={this.hideMenu}>
                                         <i className="fas fa-gamepad"></i>
                                         <span>Games</span>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to='/blog'>
+                                    <Link to='/blog' onClick={this.hideMenu}>
                                         <i className="fas fa-pencil-alt"></i>
                                         <span>Blog</span>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to='/contact'>
+                                    <Link to='/contact' onClick={this.hideMenu}>
                                         <i className="fas fa-rocket"></i>
                                         <span>Contact</span>
                                     </Link>
