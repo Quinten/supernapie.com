@@ -27,7 +27,7 @@ const Game = (props) => {
         <div itemScope itemType="http://schema.org/VideoGame">
             <Helmet>
                 <title>{game.name} - a Supernapie game</title>
-                <meta property="og:title" content={game.name+'- a Supernapie game'} />
+                <meta property="og:title" content={game.name+' - a Supernapie game'} />
                 <meta property="og:type" content="game" />
                 <meta property="og:url" content={'https://supernapie.com/games/'+game.url} />
                 <meta name="description" content={game.description} />

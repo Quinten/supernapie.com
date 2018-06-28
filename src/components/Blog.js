@@ -26,8 +26,8 @@ const Blog = (props) => {
     return (
         <div>
             <Helmet>
-                <title>{blog.name} - a Supernapie blog</title>
-                <meta property="og:title" content={blog.name+'- a Supernapie blog'} />
+                <title>{blog.name} | Supernapie blog</title>
+                <meta property="og:title" content={blog.name+' | Supernapie blog'} />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content={'https://supernapie.com/blog/'+blog.url} />
                 <meta name="description" content={blog.description} />
