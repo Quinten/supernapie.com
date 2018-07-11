@@ -1,6 +1,10 @@
 (function () {
     var urls = [
         {
+            old: 'https://quinten.github.io/ibe/',
+            new: 'https://supernapie.com/games/ibe'
+        },
+        {
             old: 'https://quinten.github.io/unmatch/',
             new: 'https://supernapie.com/games/unmatch'
         },
