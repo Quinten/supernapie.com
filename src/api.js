@@ -1,6 +1,7 @@
 const GamesAPI = {
   games: [
     { url: 'ibe', name: "Ibe", description: "Ibe is an augmented reality text adventure that takes place in a parallel universe. The game uses points of interest in the players everyday world as anchors to tell a fragmented and dystopian storyline." },
+    { url: 'soccer-slasher', name: "Soccer slasher", description: "Obviously i don't know anything about soccer. I only heard 'soccer is war'. Soccer Slasher is a sports hack 'n slash. You need to slay enemies by kicking a ball at them." },
     { url: 'unmatch', name: "Unmatch", description: "Unmatch is a puzzle game where you have to make combinations of 3 tiles with matching or unmatching shapes, colors or number of shapes." },
     { url: 'untitled', name: "Untitled", description: "Untitled is a multiplayer experiment. You can explore the small world on your own, but when there are others online you can play a game of tag." },
     { url: 'daves-disk', name: "Dave's Disk", description: "When Dave Flimsy, a game developer for a large company, opens his mailbox in the morning, he finds a rather unpleasant message. It's the start of a horrible day." },
