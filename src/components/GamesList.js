@@ -43,7 +43,17 @@ const GamesList = () => {
                                         {g.specs.desktop && <span title="Desktop"><i className="fas fa-desktop"></i></span>}
                                     </div>
                                 </div>
-                                <p itemProp="description">{g.description}</p>
+                                <p itemProp="description" className="description">{g.description}</p>
+                                <p className="read-more flex-grow">
+                                    <Link to={`/games/${g.url}`}>
+                                        <span>Read more</span>
+                                    </Link>
+                                </p>
+                                <p className="ta-center play-more">
+                                    <a className="btn game-btn" href={'https://'+g.url+'.supernapie.com'} itemProp="installUrl">
+                                        <span>Play</span>
+                                    </a>
+                                </p>
                             </div>
                         </li>
                     ))

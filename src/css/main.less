@@ -520,7 +520,7 @@ ul.games-list {
 
     li {
         display: block;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
     }
 
     .game-title-flex {
@@ -531,6 +531,7 @@ ul.games-list {
 
     .game-title {
         flex: 1 1 auto;
+        font-family: 'Nunito';
     }
 
     .game-specs {
@@ -548,7 +549,6 @@ ul.games-list {
 
     a {
         display: block;
-        font-family: 'Nunito';
 
         .lib-link(
             @_link-color: @color-theme-highlight,
@@ -570,6 +570,14 @@ ul.games-list {
         }
     }
 
+    a.btn,
+    a.btn:hover,
+    a.btn:active,
+    a.btn:link,
+    a.btn:visited {
+        color: @color-theme-background;
+    }
+
     .game-tile {
         background: @color-theme-white;
         border-radius: 5px;
@@ -577,6 +585,17 @@ ul.games-list {
         overflow: hidden;
         padding: 0 1rem 1rem;
         min-height: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+
+        > * {
+            flex: 0 0 auto;
+        }
+
+        > .flex-grow {
+            flex: 1 0 auto;
+        }
 
         .thumb {
             display: block;
@@ -589,6 +608,15 @@ ul.games-list {
             &.date {
                 margin: -.75rem 0 .75rem;
                 color: @color-theme-hint;
+            }
+
+            &.read-more {
+                margin-top: .5em;
+            }
+
+            &.play-more {
+                margin-top: 1rem;
+                margin-bottom: 5px;
             }
         }
     }

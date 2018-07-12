@@ -39,7 +39,12 @@ const BlogsList = () => {
                                     </div>
                                 </div>
                                 <p className="date">{(new Date(p.date)).toLocaleDateString('en', {year: 'numeric', month: 'long', day: 'numeric'})}</p>
-                                <p>{p.description}</p>
+                                <p className="description flex-grow">{p.description}</p>
+                                <p className="read-more">
+                                    <Link to={`/blog/${p.url}`}>
+                                        <span>Read more</span>
+                                    </Link>
+                                </p>
                             </div>
                         </li>
                     ))
