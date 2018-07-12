@@ -31,9 +31,13 @@ const BlogsList = () => {
                                 <Link to={`/blog/${p.url}`} className="thumb">
                                     <img src={'/img/'+p.url+'-thumb.jpg'} alt={p.name} title={p.name} />
                                 </Link>
-                                <Link to={`/blog/${p.url}`}>
-                                    <span>{p.name}</span>
-                                </Link>
+                                <div className="game-title-flex">
+                                    <div className="game-title">
+                                        <Link to={`/blog/${p.url}`}>
+                                            <span>{p.name}</span>
+                                        </Link>
+                                    </div>
+                                </div>
                                 <p className="date">{(new Date(p.date)).toLocaleDateString('en', {year: 'numeric', month: 'long', day: 'numeric'})}</p>
                                 <p>{p.description}</p>
                             </div>

@@ -31,9 +31,17 @@ const GamesList = () => {
                                 <Link to={`/games/${g.url}`} className="thumb" itemProp="url">
                                     <img src={'/img/'+g.url+'-thumb.jpg'} alt={g.name} title={g.name} itemProp="image" />
                                 </Link>
-                                <Link to={`/games/${g.url}`} itemProp="url">
-                                    <span itemProp="name">{g.name}</span>
-                                </Link>
+                                <div className="game-title-flex">
+                                    <div className="game-title">
+                                        <Link to={`/games/${g.url}`} itemProp="url">
+                                            <span itemProp="name">{g.name}</span>
+                                        </Link>
+                                    </div>
+                                    <div className="game-specs">
+                                        {g.specs.mobile && <i className="fas fa-mobile-alt"></i>}
+                                        {g.specs.desktop && <i className="fas fa-desktop"></i>}
+                                    </div>
+                                </div>
                                 <p itemProp="description">{g.description}</p>
                             </div>
                         </li>

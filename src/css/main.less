@@ -523,10 +523,28 @@ ul.games-list {
         margin-bottom: 3rem;
     }
 
+    .game-title-flex {
+        font-size: 1.25rem;
+        margin: .875rem 0 .75rem;
+        display: flex;
+    }
+
+    .game-title {
+        flex: 1 1 auto;
+    }
+
+    .game-specs {
+        color: @color-theme-hint;
+        flex: 0 0 auto;
+
+        svg {
+            margin-left: .5em;
+        }
+    }
+
     a {
         display: block;
         font-family: 'Nunito';
-        font-size: 1.25rem;
 
         .lib-link(
             @_link-color: @color-theme-highlight,
@@ -545,7 +563,6 @@ ul.games-list {
 
         span {
             display: block;
-            margin: .875rem 0 .75rem;
         }
     }
 
