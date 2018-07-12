@@ -36,10 +36,10 @@ const Home = () => {
             </a>
         </div>
         <h3><i className="fab fa-html5"></i> Made for the browser</h3>
-        <p>All games are made with common web technologies like html5 and javascript and with a little help from a framework called Phaser. So each game can be played in a web browser and will work on both desktop and mobile phones. There is no need to install anything.</p>
-        <p>Touch screen input is supported for all of them. On desktop you can play with mouse or keyboard. Some games even support game controllers for the hardcore players amongst you.</p>
-        <h3><i className="fas fa-mobile-alt"></i> Did you know you can add any Supernapie game to your phone's homescreen?</h3>
-        <p>Mobile web browsers like Safari and Chrome have an option to add a webpage to the homescreen of your phone. If you opened a Supernapie game in the browser of your mobile phone you can add it to your homescreen and you will get a nice icon. If you click the icon the game will open fullscreen and behave more like an app instead of a webpage.</p>
+        <p>The games are made with common web technologies like html5 and javascript and with a little help from a framework called Phaser. So each game can be played in a web browser. There is no need to install anything.</p>
+        <p>Some are designed for mobile, some for desktop and some for both. Some games even support gamecontrollers for hardcore gamers.</p>
+        <h3><i className="fas fa-mobile-alt"></i> Did you know you can add Supernapie games to your phone's homescreen?</h3>
+        <p>Mobile web browsers like Safari and Chrome have an option to add a webpage to the homescreen of your phone. If you opened a Supernapie game in the browser of your mobile phone, you can add it to your homescreen and you will get a nice icon. If you click the icon the game will open fullscreen and behave more like an app instead of a webpage.</p>
       </div>
     )
 }
