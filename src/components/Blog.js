@@ -24,7 +24,7 @@ const Blog = (props) => {
         });
 
     return (
-        <div>
+        <div className="game-details">
             <Helmet>
                 <title>{blog.name} | Supernapie blog</title>
                 <meta property="og:title" content={blog.name+' | Supernapie blog'} />
@@ -41,7 +41,11 @@ const Blog = (props) => {
             <div className="game-poster">
                 <img src={'/img/'+blog.url+'-poster.jpg'} alt={blog.name} title={blog.name} />
             </div>
-            <h1>{blog.name}</h1>
+            <div className="game-title-flex">
+                <div className="game-title">
+                    <h1>{blog.name}</h1>
+                </div>
+            </div>
             <p className="blog-date">{(new Date(blog.date)).toLocaleDateString('en', {year: 'numeric', month: 'long', day: 'numeric'})}</p>
             <div id="game-description"></div>
         </div>

@@ -538,7 +538,11 @@ ul.games-list {
         flex: 0 0 auto;
 
         svg {
-            margin-left: .5em;
+            margin-left: .25em;
+
+            &.fa-gamepad {
+                transform: rotate(0);
+            }
         }
     }
 
@@ -585,6 +589,37 @@ ul.games-list {
             &.date {
                 margin: -.75rem 0 .75rem;
                 color: @color-theme-hint;
+            }
+        }
+    }
+}
+
+.game-details {
+
+    .game-title-flex {
+        font-size: 1.8em;
+        margin: 1.25rem 0;
+        display: flex;
+    }
+
+    .game-title {
+        flex: 1 1 auto;
+
+        h1 {
+            font-size: 1em;
+            margin: 0;
+        }
+    }
+
+    .game-specs {
+        color: @color-theme-hint;
+        flex: 0 0 auto;
+
+        svg {
+            margin-left: .25em;
+
+            &.fa-gamepad {
+                transform: rotate(0);
             }
         }
     }

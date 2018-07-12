@@ -24,7 +24,7 @@ const Game = (props) => {
         });
 
     return (
-        <div itemScope itemType="http://schema.org/VideoGame">
+        <div itemScope itemType="http://schema.org/VideoGame" className="game-details">
             <Helmet>
                 <title>{game.name} - a Supernapie game</title>
                 <meta property="og:title" content={game.name+' - a Supernapie game'} />
@@ -49,7 +49,16 @@ const Game = (props) => {
                     <span>Play game</span>
                 </a>
             </div>
-            <h1 itemProp="name">{game.name}</h1>
+            <div className="game-title-flex">
+                <div className="game-title">
+                    <h1 itemProp="name">{game.name}</h1>
+                </div>
+                <div className="game-specs">
+                    {game.specs.gamepad && <span title="Gamepad"><i className="fas fa-gamepad"></i></span>}
+                    {game.specs.mobile && <span title="Mobile"><i className="fas fa-mobile-alt"></i></span>}
+                    {game.specs.desktop && <span title="Desktop"><i className="fas fa-desktop"></i></span>}
+                </div>
+            </div>
             <div id="game-description" itemProp="description"></div>
         </div>
     )

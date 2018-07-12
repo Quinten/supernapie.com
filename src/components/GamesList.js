@@ -38,8 +38,9 @@ const GamesList = () => {
                                         </Link>
                                     </div>
                                     <div className="game-specs">
-                                        {g.specs.mobile && <i className="fas fa-mobile-alt"></i>}
-                                        {g.specs.desktop && <i className="fas fa-desktop"></i>}
+                                        {g.specs.gamepad && <span title="Gamepad"><i className="fas fa-gamepad"></i></span>}
+                                        {g.specs.mobile && <span title="Mobile"><i className="fas fa-mobile-alt"></i></span>}
+                                        {g.specs.desktop && <span title="Desktop"><i className="fas fa-desktop"></i></span>}
                                     </div>
                                 </div>
                                 <p itemProp="description">{g.description}</p>
