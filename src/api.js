@@ -18,6 +18,7 @@ const GamesAPI = {
 
 const BlogAPI = {
   posts: [
+    { url: 'adventure-jam-2018-post-mortem', name: "Adventure Jam 2018 post mortem", description: "Last May i joined Adventure Jam for the second year in a row. This year's entry was a little weird and experimental, but i still learned a lot from it...", date: '2018-07-17'},
     { url: 'keyboard-focus-in-an-iframe', name: "Keyboard focus in an iframe", description: "If your are running your html5 game in an iframe, you might run into the problem where your keyboard input loses focus, when you click outside the iframe. Here is a quick tip to circumvent this.", date: '2018-07-11'},
     { url: 'support-retina-with-phaser-3', name: "Support retina with Phaser 3", description: "You can support retina devices and other pixel ratio's in your Phaser 3 games. In this short blogpost i will explain how and give some tips on how to make your art super crisp.", date: '2018-06-03'},
     { url: 'ludum-dare-41-post-mortem', name: "Ludum Dare 41 post mortem", description: "About a month ago, I participated for the first time with the Ludum Dare game jam. Here is what i learned from it.", date: '2018-05-21'},

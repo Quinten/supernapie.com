@@ -37,8 +37,11 @@
         <loc>https://supernapie.com/blog</loc>
     </url>
     <url>
+        <loc>https://supernapie.com/blog/adventure-jam-2018-post-mortem</loc>
+    </url>
+    <url>
         <loc>https://supernapie.com/blog/keyboard-focus-in-an-iframe</loc>
-    </url> 
+    </url>
     <url>
         <loc>https://supernapie.com/blog/support-retina-with-phaser-3</loc>
     </url>
