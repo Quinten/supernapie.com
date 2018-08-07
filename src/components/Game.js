@@ -39,14 +39,14 @@ const Game = (props) => {
                 <meta property="fb:app_id" content="1418768124974325" />
             </Helmet>
             <div className="game-poster">
-                <a href={'https://'+game.url+'.supernapie.com'} itemProp="installUrl">
-                    <img src={'/img/'+game.url+'-poster.jpg'} alt={'Play '+game.name} title={'Play '+game.name} itemProp="image" />
+                <a href={(game.link) ? game.link : 'https://'+game.url+'.supernapie.com'} itemProp="installUrl">
+                    <img src={'/img/'+game.url+'-poster.jpg'} alt={'Play '+game.name} title={game.cta + ' ' + game.name} itemProp="image" />
                 </a>
             </div>
             <div className="game-btn-wrapper">
-                <a className="btn game-btn" href={'https://'+game.url+'.supernapie.com'} itemProp="installUrl">
+                <a className="btn game-btn" href={(game.link) ? game.link : 'https://'+game.url+'.supernapie.com'} itemProp="installUrl">
                     <i className="fas fa-gamepad fa-lg"></i>
-                    <span>Play game</span>
+                    <span>{game.cta} game</span>
                 </a>
             </div>
             <div className="game-title-flex">

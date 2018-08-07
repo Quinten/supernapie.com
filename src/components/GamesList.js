@@ -50,8 +50,8 @@ const GamesList = () => {
                                     </Link>
                                 </p>
                                 <p className="ta-center play-more">
-                                    <a className="btn game-btn" href={'https://'+g.url+'.supernapie.com'} itemProp="installUrl">
-                                        <span>Play</span>
+                                    <a className="btn game-btn" href={(g.link) ? g.link : 'https://'+g.url+'.supernapie.com'} itemProp="installUrl">
+                                        <span>{g.cta}</span>
                                     </a>
                                 </p>
                             </div>
