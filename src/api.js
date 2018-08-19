@@ -1,5 +1,6 @@
 const GamesAPI = {
   games: [
+    { url: 'acid-sink', name: "Acid Sink", cta: "Play", link: false, specs: { mobile: false, desktop: true, gamepad: true }, description: "Get your swimsuits ready! It's time for a dive! Wall jump and swim your way out of Acid Sink. Made for Ludum Dare 42 in 72 hours. Theme: Running out of space. With music by Fonske." },
     { url: 'ibe', name: "Ibe", cta: "Play", link: false, specs: { mobile: true, desktop: false, gamepad: false }, description: "Ibe is an augmented reality text adventure that takes place in a parallel universe. The game uses points of interest in the players everyday world as anchors to tell a fragmented and dystopian storyline." },
     { url: 'soccer-slasher', name: "Soccer slasher", cta: "Play", link: false, specs: { mobile: false, desktop: true, gamepad: false }, description: "Obviously i don't know anything about soccer. I only heard 'soccer is war'. Soccer Slasher is a sports hack 'n slash. You need to slay enemies by kicking a ball at them." },
     { url: 'unmatch', name: "Unmatch", cta: "Play", link: false, specs: { mobile: true, desktop: true, gamepad: false }, description: "Unmatch is a puzzle game where you have to make combinations of 3 tiles with matching or unmatching shapes, colors or number of shapes." },
