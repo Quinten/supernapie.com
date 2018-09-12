@@ -20,6 +20,7 @@ const GamesAPI = {
 
 const BlogAPI = {
   posts: [
+    { url: 'ludum-dare-42-post-mortem', name: "Ludum Dare 42 post mortem", description: "I submitted my second Ludum Dare entry last month. This time with the help of my brother Thomas, who did the sound and music. Here are some afterthoughts about how it went.", date: '2018-09-12'},
     { url: 'adventure-jam-2018-post-mortem', name: "Adventure Jam 2018 post mortem", description: "Last May i joined Adventure Jam for the second year in a row. This year's entry was a little weird and experimental, but i still learned a lot from it...", date: '2018-07-17'},
     { url: 'keyboard-focus-in-an-iframe', name: "Keyboard focus in an iframe", description: "If your are running your html5 game in an iframe, you might run into the problem where your keyboard input loses focus, when you click outside the iframe. Here is a quick tip to circumvent this.", date: '2018-07-11'},
     { url: 'support-retina-with-phaser-3', name: "Support retina with Phaser 3", description: "You can support retina devices and other pixel ratio's in your Phaser 3 games. In this short blogpost i will explain how and give some tips on how to make your art super crisp.", date: '2018-06-03'},
