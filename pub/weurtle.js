@@ -1,6 +1,10 @@
 (function () {
     var urls = [
         {
+            old: 'https://quinten.github.io/acid-sink/',
+            new: 'https://supernapie.com/games/acid-sink'
+        },
+        {
             old: 'https://quinten.github.io/ibe/',
             new: 'https://supernapie.com/games/ibe'
         },
