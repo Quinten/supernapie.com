@@ -1,5 +1,7 @@
 **You can support retina devices and other pixel ratio's in your Phaser 3 games. In this short blogpost i will explain how and give some tips on how to make your art super crisp.**
 
+**Warning before you continue: In Phaser 3.16 the scale manager will be introduced. So when that is released i will update the code for this tutorial. Stay tuned ;)**
+
 Last week i launched [a poll on Facebook](https://www.facebook.com/supernapie/photos/a.2105297896420965.1073741828.2098916053725816/2123499387934149/?type=1&theater) and asked wether i should use pixel or vector artwork for my next game. The vector squid won the poll and now i was scratching my head on how to make it look not to blurry on retina devices. Pixelart is not that difficult, but vectorart is a different beast. But let's get on with the tech right away.
 
 You can find the source files for this article [here](https://github.com/Quinten/phaser3-retina) if you are more of a code reader.
