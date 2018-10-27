@@ -10,6 +10,9 @@
         <loc>https://supernapie.com/games</loc>
     </url>
     <url>
+        <loc>https://supernapie.com/games/acid-sink</loc>
+    </url>
+    <url>
         <loc>https://supernapie.com/games/ibe</loc>
     </url>
     <url>
@@ -17,6 +20,9 @@
     </url>
     <url>
         <loc>https://supernapie.com/games/unmatch</loc>
+    </url>
+    <url>
+        <loc>https://supernapie.com/games/untitled</loc>
     </url>
     <url>
         <loc>https://supernapie.com/games/daves-disk</loc>
@@ -28,13 +34,19 @@
         <loc>https://supernapie.com/games/euphrosine-wants-ten-dots</loc>
     </url>
     <url>
-        <loc>https://supernapie.com/games/untitled</loc>
-    </url>
-    <url>
         <loc>https://supernapie.com/games/graves-of-salad</loc>
     </url>
     <url>
+        <loc>https://supernapie.com/games/voidcrab</loc>
+    </url>
+    <url>
         <loc>https://supernapie.com/blog</loc>
+    </url>
+    <url>
+        <loc>https://supernapie.com/blog/hiding-the-mouse-in-a-ux-friendly-way</loc>
+    </url>
+    <url>
+        <loc>https://supernapie.com/blog/ludum-dare-42-post-mortem</loc>
     </url>
     <url>
         <loc>https://supernapie.com/blog/adventure-jam-2018-post-mortem</loc>
@@ -46,9 +58,9 @@
         <loc>https://supernapie.com/blog/support-retina-with-phaser-3</loc>
     </url>
     <url>
-        <loc>https://supernapie.com/blog/loading-assets-as-data-uri-in-phaser-3</loc>
+        <loc>https://supernapie.com/blog/ludum-dare-41-post-mortem</loc>
     </url>
     <url>
-        <loc>https://supernapie.com/blog/ludum-dare-41-post-mortem</loc>
+        <loc>https://supernapie.com/blog/loading-assets-as-data-uri-in-phaser-3</loc>
     </url>
 </urlset>
