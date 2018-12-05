@@ -32,6 +32,33 @@ img {
     height: auto;
 }
 
+input {
+    font-size: 1rem;
+    border: 1px @color-theme-white solid;
+    background: @color-theme-white;
+    color: @color-theme-text;
+    border-radius: 5px;
+    padding: .5em;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 .5em .5em 0;
+}
+
+::placeholder {
+    color: @color-theme-hint;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: @color-theme-hint;
+    opacity: 1;
+}
+
+::-ms-input-placeholder {
+    color: @color-theme-hint;
+    opacity: 1;
+}
+
 // sticky footer
 
 html, body {
@@ -49,6 +76,7 @@ html, body {
     -webkit-flex-flow: column;
     flex-flow: column;
     min-height: 100%;
+    width: 100%;
 
     main {
         -webkit-flex: 1 0 auto;
@@ -78,6 +106,10 @@ footer {
     background: @color-theme-highlight;
     border-top: 5px @color-theme-highlight-light solid;
     color: @color-theme-background;
+    
+    h3 {
+        color: @color-theme-background;
+    }
 }
 
 .copyright {
@@ -291,6 +323,11 @@ a.btn:focus {
     outline: none;
 }
 
+footer button,
+footer button:hover,
+footer button:active,
+footer button:link,
+footer button:visited,
 a.btn.game-btn,
 a.btn.game-btn:hover,
 a.btn.game-btn:active,
@@ -300,10 +337,12 @@ a.btn.game-btn:visited {
     background: @color-theme-cta;
 }
 
+footer button:hover,
 a.btn.game-btn:hover {
     box-shadow: 0 4px 0 @color-theme-cta-shade;
 }
 
+footer button:active,
 a.btn.game-btn:active {
     box-shadow: 0 1px 0 @color-theme-cta-shade;
 }
