@@ -39,21 +39,21 @@ html, body {
 }
 
 .page-wrapper {
+    display: flex;
+    min-height: 100%;
+}
+
+.app-wrapper {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-flow: column;
     flex-flow: column;
     min-height: 100%;
-}
 
-footer {
-    -webkit-flex: initial;
-    flex: initial;
-}
-
-.app-wrapper {
-    -webkit-flex: 1 0 auto;
-    flex: 1 0 auto;
+    main {
+        -webkit-flex: 1 0 auto;
+        flex: 1 0 auto;
+    }
 }
 
 // wrappers
@@ -74,10 +74,15 @@ footer {
 
 // footer
 
+footer {
+    background: @color-theme-highlight;
+    border-top: 5px @color-theme-highlight-light solid;
+    color: @color-theme-background;
+}
+
 .copyright {
     text-align: center;
     padding: 2rem 0;
-    color: @color-theme-hint;
 }
 
 .contact {
