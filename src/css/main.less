@@ -42,6 +42,7 @@ input {
     display: inline-block;
     vertical-align: top;
     margin: 0 .5em .5em 0;
+    line-height: 1.5;
 }
 
 ::placeholder {
@@ -57,6 +58,20 @@ input {
 ::-ms-input-placeholder {
     color: @color-theme-hint;
     opacity: 1;
+}
+
+.inline-flex-form {
+    display: flex;
+
+    input {
+        flex: 1 1 4em;
+        margin-bottom: -4px;
+        min-width: 4em;
+    }
+
+    button {
+        flex: 0 0 auto;
+    }
 }
 
 // sticky footer
@@ -106,9 +121,93 @@ footer {
     background: @color-theme-highlight;
     border-top: 5px @color-theme-highlight-light solid;
     color: @color-theme-background;
-    
+    margin-top: 40px;
+
     h3 {
         color: @color-theme-background;
+    }
+
+    a {
+        .lib-link(
+            @_link-color: @color-theme-background,
+            @_link-text-decoration: none,
+            @_link-color-visited: @color-theme-background,
+            @_link-text-decoration-visited: none,
+            @_link-color-hover: lighten(@color-theme-highlight, 25%),
+            @_link-text-decoration-hover: none,
+            @_link-color-active: lighten(@color-theme-highlight, 25%),
+            @_link-text-decoration-active: none
+        );
+    }
+
+    nav {
+        margin-top: 1rem;
+        font-size: 1.25rem;
+        font-family: 'Nunito', sans-serif;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+                display: block;
+                margin: 0 0 .5em;
+            }
+        }
+
+        svg {
+            display: inline-block;
+            margin-right: .35em;
+
+            &.fa-gamepad {
+                margin-right: .5em;
+            }
+
+            &.fa-rocket,
+            &.fa-pencil-alt {
+                margin-right: .75em;
+            }
+        }
+    }
+}
+
+.footer-social-links {
+    font-size: 1.75rem;
+    margin-top: 2rem;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+
+        li {
+            display: inline-block;
+            margin: 0 .5em;
+        }
+    }
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+
+    .footer-sitemap {
+        flex: 1 1 320px;
+    }
+
+    .mailchimp-form {
+        flex: 1 1 320px;
+    }
+}
+
+.mailchimp-form {
+    margin-top: 1rem;
+
+    h3 {
+        margin: 0 0 .5em;
+        font-size: 1.25rem;
     }
 }
 
@@ -481,6 +580,17 @@ a.btn.game-btn:active {
 
 .fa-github-alt {
     color: #6e5494;
+}
+
+footer {
+
+    .fa-instagram,
+    .fa-twitter,
+    .fa-facebook-f,
+    .fa-slack-hash,
+    .fa-github-alt {
+        color: inherit;
+    }
 }
 
 .game-btn-wrapper {
