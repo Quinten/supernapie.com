@@ -900,3 +900,33 @@ pre {
     border: 1px @color-theme-line solid;
     overflow-x: scroll;
 }
+
+// homepage
+
+.homepage {
+
+    ul.games-list {
+        margin-bottom: 0;
+    }
+
+    p.ta-center {
+        margin-top: 0;
+        margin-bottom: 4rem;
+    }
+}
+
+@media (max-width: 960px) {
+
+    .homepage {
+
+        ul.games-list {
+
+            li {
+
+                &:nth-child(3) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

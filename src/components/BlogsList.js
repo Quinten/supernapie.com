@@ -1,7 +1,7 @@
 import React from 'react'
-import { BlogAPI } from '../api'
-import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
+import { BlogAPI } from '../api'
+import BlogsGrid from './BlogsGrid'
 
 const BlogsList = () => {
     let title = 'The Supernapie Blog';
@@ -23,33 +23,7 @@ const BlogsList = () => {
             </Helmet>
             <h1 className="ta-center"><i className="fas fa-pencil-alt"></i> <span>Blog</span></h1>
             <p>{description}</p>
-            <ul className="games-list">
-                {
-                    BlogAPI.all().map(p => (
-                        <li key={p.url}>
-                            <div className="game-tile">
-                                <Link to={`/blog/${p.url}`} className="thumb">
-                                    <img src={'/img/'+p.url+'-thumb.jpg'} alt={p.name} title={p.name} />
-                                </Link>
-                                <div className="game-title-flex">
-                                    <div className="game-title">
-                                        <Link to={`/blog/${p.url}`}>
-                                            <span>{p.name}</span>
-                                        </Link>
-                                    </div>
-                                </div>
-                                <p className="date">{(new Date(p.date)).toLocaleDateString('en', {year: 'numeric', month: 'long', day: 'numeric'})}</p>
-                                <p className="description flex-grow">{p.description}</p>
-                                <p className="read-more">
-                                    <Link to={`/blog/${p.url}`}>
-                                        <span>Read more</span>
-                                    </Link>
-                                </p>
-                            </div>
-                        </li>
-                    ))
-                }
-            </ul>
+            <BlogsGrid blogs={BlogAPI.all()} />
         </div>
     );
 }

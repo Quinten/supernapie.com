@@ -12,6 +12,7 @@ const GamesAPI = {
     { url: 'voidcrab', name: "Voidcrab", cta: "Buy", link: "https://supernapie.itch.io/voidcrab", specs: { mobile: false, desktop: true, gamepad: false }, description: "Voidcrab is a challenging lo-fi pixel-art metroid-vania platformer in which you will get lost. Calming and frustrating at the same time." }
   ],
   all: function() { return this.games},
+  latest: function() { return this.games.slice(0, 3)},
   get: function(url) {
     const isGame = g => g.url === url
     return this.games.find(isGame)
@@ -29,6 +30,7 @@ const BlogAPI = {
     { url: 'loading-assets-as-data-uri-in-phaser-3', name: "Loading assets as data URI's in Phaser 3", description: "In this blogpost i'll explain how you can load the assets of your Phaser 3 game as data URI's, without having to rely on xhr requests.", date: '2018-04-29'}
   ],
   all: function() { return this.posts},
+  latest: function() { return this.posts.slice(0, 3)},
   get: function(url) {
     const isPost = p => p.url === url
     return this.posts.find(isPost)

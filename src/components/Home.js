@@ -1,12 +1,17 @@
 import React from 'react'
-import Logo from './Logo'
+import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
+import Logo from './Logo'
+import { GamesAPI } from '../api'
+import GamesGrid from './GamesGrid'
+import { BlogAPI } from '../api'
+import BlogsGrid from './BlogsGrid'
 
 const Home = () => {
-    let title = 'Supernapie: Play free web games';
+    let title = 'Supernapie: Primordial Web Game Soup';
     let description = 'Play free web games on mobile and desktop. Supernapie games are carefully built by myself, Quinten Clause.';
     return (
-      <div>
+      <div className='homepage'>
         <Helmet>
             <title>{title}</title>
             <meta property="og:title" content={title} />
@@ -21,25 +26,25 @@ const Home = () => {
             <meta property="fb:app_id" content="1418768124974325" />
         </Helmet>
         <div className="game-poster">
-            <img src={'/img/supernapie-poster.jpg'} alt="Supernapie test devices" />
+            <img src={'/img/supernapie-world.jpg'} alt="Supernapie world" />
         </div>
         <h1 className="ta-center"><Logo /> <span>Supernapie</span></h1>
-        <h2 className="ta-center">Play free web games on mobile and desktop.</h2>
-        <p>Supernapie games are carefully built by myself, Quinten Clause. I am an animator and web developer that makes web games as a hobby project. Designing game mechanics and the freedom of coding for the web is my peanutbutter jam.</p>
-        <p>Most gaming portals and app stores are overcrowded these days and here it is just me and my goofy games. Supernapie is not a big studio, but just wants to be a cosy space for web gaming, where i can do whatever i want.</p>
-        <div className="game-banner">
-            <a href={'/games'} title={'Check out the Supernapie games catalog'}>
-                <img src={'/img/games-banner-cropped.jpg'} alt={'Check out the Supernapie games catalog'} />
-                <div className="game-banner-text">
-                    <h2>Check out the Supernapie games catalog <span className="arrow">-&gt;</span></h2>
-                </div>
-            </a>
-        </div>
-        <h3><i className="fab fa-html5"></i> Made for the browser</h3>
-        <p>The games are made with common web technologies like html5 and javascript and with a little help from a framework called Phaser. So each game can be played in a web browser. There is no need to install anything.</p>
-        <p>Some are designed for mobile, some for desktop and some for both. Some games even support gamecontrollers for hardcore gamers.</p>
-        <h3><i className="fas fa-mobile-alt"></i> Did you know you can add Supernapie games to your phone's homescreen?</h3>
-        <p>Mobile web browsers like Safari and Chrome have an option to add a webpage to the homescreen of your phone. If you opened a Supernapie game in the browser of your mobile phone, you can add it to your homescreen and you will get a nice icon. If you click the icon the game will open fullscreen and behave more like an app instead of a webpage.</p>
+        <h2 className="ta-center">Primordial Web Game Soup</h2>
+        <GamesGrid games={GamesAPI.latest()} />
+        <p className="ta-center">
+            <Link to={'/games'} className="btn">
+                <i className="fas fa-gamepad"></i>
+                <span>View all games</span>
+            </Link>
+        </p>
+        <h2 className="ta-center">With Tech Noodles</h2>
+        <BlogsGrid blogs={BlogAPI.latest()} />
+        <p className="ta-center">
+            <Link to={'/blog'} className="btn">
+                <i className="fas fa-pencil-alt"></i>
+                <span>View all blogposts</span>
+            </Link>
+        </p>
       </div>
     )
 }
