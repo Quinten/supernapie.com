@@ -1,14 +1,21 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
 import Logo from './Logo'
 
-export default class Header extends React.Component {
+class Header extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = { showMenu: false }
         this.showMenu = this.showMenu.bind(this);
         this.hideMenu = this.hideMenu.bind(this);
+    }
+
+    componentDidUpdate(prevProps) {
+        if (this.props.location !== prevProps.location) {
+            window.scrollTo(0, 0);
+            this.hideMenu();
+        }
     }
 
     showMenu() {
@@ -25,7 +32,7 @@ export default class Header extends React.Component {
                 <div className="content-wrapper">
                     <div className="header-wrapper">
                         <div className="logo">
-                            <Link to='/' onClick={this.hideMenu}>
+                            <Link to='/'>
                                 <Logo />
                                 <span>Supernapie</span>
                             </Link>
@@ -38,19 +45,19 @@ export default class Header extends React.Component {
                         <nav className={ this.state.showMenu ? 'active' : 'closed'}>
                             <ul>
                                 <li>
-                                    <Link to='/games' onClick={this.hideMenu}>
+                                    <Link to='/games'>
                                         <i className="fas fa-gamepad"></i>
                                         <span>Games</span>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to='/blog' onClick={this.hideMenu}>
+                                    <Link to='/blog'>
                                         <i className="fas fa-pencil-alt"></i>
                                         <span>Blog</span>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to='/contact' onClick={this.hideMenu}>
+                                    <Link to='/contact'>
                                         <i className="fas fa-rocket"></i>
                                         <span>Contact</span>
                                     </Link>
@@ -63,3 +70,5 @@ export default class Header extends React.Component {
         );
     }
 }
+
+export default withRouter(Header);
