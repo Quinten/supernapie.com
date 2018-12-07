@@ -40,22 +40,58 @@ img {
   width: 100%;
   height: auto;
 }
+input {
+  font-size: 1rem;
+  border: 1px #FFFFFF solid;
+  background: #FFFFFF;
+  color: #2C3A47;
+  border-radius: 5px;
+  padding: 0.5em;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 0.5em 0.5em 0;
+  line-height: 1.5;
+}
+::placeholder {
+  color: #CAD3C8;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  color: #CAD3C8;
+  opacity: 1;
+}
+::-ms-input-placeholder {
+  color: #CAD3C8;
+  opacity: 1;
+}
+.inline-flex-form {
+  display: flex;
+}
+.inline-flex-form input {
+  flex: 1 1 4em;
+  margin-bottom: -4px;
+  min-width: 4em;
+}
+.inline-flex-form button {
+  flex: 0 0 auto;
+}
 html,
 body {
   height: 100%;
 }
 .page-wrapper {
+  display: flex;
+  min-height: 100%;
+}
+.app-wrapper {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: column;
   flex-flow: column;
   min-height: 100%;
+  width: 100%;
 }
-footer {
-  -webkit-flex: initial;
-  flex: initial;
-}
-.app-wrapper {
+.app-wrapper main {
   -webkit-flex: 1 0 auto;
   flex: 1 0 auto;
 }
@@ -70,10 +106,95 @@ footer {
     padding: 0 4rem;
   }
 }
+footer {
+  background: #F97F51;
+  border-top: 5px #FF9A69 solid;
+  color: #FFFDF2;
+  margin-top: 40px;
+}
+footer h3 {
+  color: #FFFDF2;
+}
+footer a {
+  color: #FFFDF2;
+  text-decoration: none;
+}
+footer a:visited {
+  color: #FFFDF2;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #fddacc;
+  text-decoration: none;
+}
+footer a:active {
+  color: #fddacc;
+  text-decoration: none;
+}
+footer nav {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-family: 'Nunito', sans-serif;
+}
+footer nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+footer nav ul li {
+  display: block;
+  margin: 0 0 0.5em;
+}
+footer nav svg {
+  display: inline-block;
+  margin-right: 0.35em;
+}
+footer nav svg.fa-gamepad {
+  margin-right: 0.5em;
+}
+footer nav svg.fa-rocket,
+footer nav svg.fa-pencil-alt {
+  margin-right: 0.75em;
+}
+.footer-social-links {
+  font-size: 1.75rem;
+  margin-top: 2rem;
+}
+.footer-social-links ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.footer-social-links ul li {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-content .footer-sitemap {
+  flex: 1 1 320px;
+}
+.footer-content .mailchimp-form {
+  flex: 1 1 320px;
+}
+.mailchimp-form {
+  margin-top: 1rem;
+}
+.mailchimp-form h3 {
+  margin: 0 0 0.5em;
+  font-size: 1.25rem;
+}
+.mailchimp-form .sending-message,
+.mailchimp-form .error-message,
+.mailchimp-form .success-message {
+  margin-top: 14px;
+}
 .copyright {
   text-align: center;
   padding: 2rem 0;
-  color: #CAD3C8;
 }
 .contact {
   text-align: center;
@@ -81,7 +202,7 @@ footer {
 }
 .contact span {
   display: inline-block;
-  margin: 0 .5em;
+  margin: 0 0.5em;
 }
 header {
   background: #F97F51;
@@ -124,7 +245,7 @@ header .header-wrapper .logo {
 }
 header .header-wrapper .logo span {
   display: inline-block;
-  margin: 0 .5em;
+  margin: 0 0.5em;
 }
 header .header-wrapper nav {
   float: right;
@@ -133,7 +254,7 @@ header .header-wrapper .mobile-toggle {
   float: right;
   border: 1px #FFFDF2 solid;
   border-radius: 3px;
-  padding: 0 .25em;
+  padding: 0 0.25em;
   display: none;
 }
 header nav ul {
@@ -147,7 +268,7 @@ header nav ul li {
 }
 header nav ul li span {
   display: inline-block;
-  margin: 0 .5em;
+  margin: 0 0.5em;
 }
 @media (max-width: 640px) {
   header .header-wrapper .mobile-toggle {
@@ -186,9 +307,9 @@ header nav ul li span {
     margin: 0;
   }
   header nav ul li svg {
-    width: 1.25em!important;
+    width: 1.25em !important;
     vertical-align: middle;
-    margin-right: .125em;
+    margin-right: 0.125em;
   }
 }
 .fa-gamepad {
@@ -201,7 +322,7 @@ button {
   box-sizing: content-box;
   font-family: 'Nunito';
   font-size: 1rem;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   border-radius: 5px;
   border: 0;
   box-shadow: 0 5px 0 #D66D46;
@@ -218,7 +339,7 @@ a.btn:visited {
   box-sizing: border-box;
   font-family: 'Nunito';
   font-size: 1rem;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   border-radius: 5px;
   border: 0;
   box-shadow: 0 5px 0 #D66D46;
@@ -228,7 +349,7 @@ a.btn:visited {
 }
 button svg + span,
 a.btn svg + span {
-  margin: 0 0 0 .5em;
+  margin: 0 0 0 0.5em;
 }
 button:hover,
 a.btn:hover {
@@ -246,6 +367,11 @@ button:focus,
 a.btn:focus {
   outline: none;
 }
+footer button,
+footer button:hover,
+footer button:active,
+footer button:link,
+footer button:visited,
 a.btn.game-btn,
 a.btn.game-btn:hover,
 a.btn.game-btn:active,
@@ -254,9 +380,11 @@ a.btn.game-btn:visited {
   box-shadow: 0 5px 0 #932D5D;
   background: #B33771;
 }
+footer button:hover,
 a.btn.game-btn:hover {
   box-shadow: 0 4px 0 #932D5D;
 }
+footer button:active,
 a.btn.game-btn:active {
   box-shadow: 0 1px 0 #932D5D;
 }
@@ -382,6 +510,13 @@ a.btn.game-btn:active {
 .fa-github-alt {
   color: #6e5494;
 }
+footer .fa-instagram,
+footer .fa-twitter,
+footer .fa-facebook-f,
+footer .fa-slack-hash,
+footer .fa-github-alt {
+  color: inherit;
+}
 .game-btn-wrapper {
   text-align: center;
   margin: 2rem 0;
@@ -402,9 +537,9 @@ a.btn.game-btn:active {
 .game-banner a img {
   display: block;
   position: relative;
-  opacity: .65;
-  -webkit-transition: opacity .5s;
-  transition: opacity .5s;
+  opacity: 0.65;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 .game-banner a:hover img {
   opacity: 1;
@@ -461,7 +596,7 @@ ul.games-list li {
 }
 ul.games-list .game-title-flex {
   font-size: 1.25rem;
-  margin: .875rem 0 .75rem;
+  margin: 0.875rem 0 0.75rem;
   display: flex;
 }
 ul.games-list .game-title {
@@ -473,7 +608,7 @@ ul.games-list .game-specs {
   flex: 0 0 auto;
 }
 ul.games-list .game-specs svg {
-  margin-left: .25em;
+  margin-left: 0.25em;
 }
 ul.games-list .game-specs svg.fa-gamepad {
   transform: rotate(0);
@@ -537,7 +672,7 @@ ul.games-list .game-tile p.date {
   color: #CAD3C8;
 }
 ul.games-list .game-tile p.read-more {
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 ul.games-list .game-tile p.play-more {
   margin-top: 1rem;
@@ -560,7 +695,7 @@ ul.games-list .game-tile p.play-more {
   flex: 0 0 auto;
 }
 .game-details .game-specs svg {
-  margin-left: .25em;
+  margin-left: 0.25em;
 }
 .game-details .game-specs svg.fa-gamepad {
   transform: rotate(0);
@@ -580,10 +715,10 @@ ul.games-list .game-tile p.play-more {
   }
   .games-list li:nth-child(odd) {
     clear: both;
-    padding-right: .5rem;
+    padding-right: 0.5rem;
   }
   .games-list li:nth-child(even) {
-    padding-left: .5rem;
+    padding-left: 0.5rem;
   }
 }
 @media (min-width: 769px) {
@@ -607,8 +742,8 @@ ul.games-list .game-tile p.play-more {
   }
   .games-list li:nth-child(3n+2) {
     clear: none;
-    padding-left: .5rem;
-    padding-right: .5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
   .games-list li:nth-child(3n+3) {
     clear: none;
