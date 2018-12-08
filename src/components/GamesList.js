@@ -1,6 +1,6 @@
 import React from 'react'
-import { GamesAPI } from '../api'
 import { Helmet } from 'react-helmet'
+import { GamesAPI } from '../api'
 import GamesGrid from './GamesGrid'
 
 const GamesList = () => {
