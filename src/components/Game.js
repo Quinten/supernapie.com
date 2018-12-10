@@ -60,6 +60,14 @@ const Game = (props) => {
                 </div>
             </div>
             <div id="game-description" itemProp="description"></div>
+            <div className="youtube-list">
+                {!!game.youtube.length && <h3>{game.name} on Youtube</h3>}
+                {game.youtube.map(y => (
+                    <div key={y} className="youtube-item">
+                        <iframe width="560" height="315" src={"https://www.youtube.com/embed/" + y} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                ))}
+            </div>
         </div>
     )
 }
