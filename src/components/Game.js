@@ -61,6 +61,14 @@ const Game = (props) => {
             </div>
             <div id="game-description" itemProp="description"></div>
             <div className="youtube-list">
+                {!!game.twitch.length && <h3>{game.name} on Twitch</h3>}
+                {game.twitch.map(y => (
+                    <div key={y} className="youtube-item">
+                        <iframe width="560" height="315" src={"https://player.twitch.tv/?autoplay=false" + y} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
+                    </div>
+                ))}
+            </div>
+            <div className="youtube-list">
                 {!!game.youtube.length && <h3>{game.name} on Youtube</h3>}
                 {game.youtube.map(y => (
                     <div key={y} className="youtube-item">
