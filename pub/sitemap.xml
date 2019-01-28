@@ -10,6 +10,9 @@
         <loc>https://supernapie.com/games</loc>
     </url>
     <url>
+        <loc>https://supernapie.com/games/esciit</loc>
+    </url>
+    <url>
         <loc>https://supernapie.com/games/acid-sink</loc>
     </url>
     <url>
@@ -41,6 +44,9 @@
     </url>
     <url>
         <loc>https://supernapie.com/blog</loc>
+    </url>
+    <url>
+        <loc>https://supernapie.com/blog/procedural-generated-maze-in-phaser-3</loc>
     </url>
     <url>
         <loc>https://supernapie.com/blog/hiding-the-mouse-in-a-ux-friendly-way</loc>
