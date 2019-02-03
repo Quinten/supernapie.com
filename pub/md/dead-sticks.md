@@ -2,6 +2,12 @@
 
 'dead sticks' comes from 'dead stick landing' which means landing an aircraft when the engine broke down.
 
-### At the moment i am making a longer version, that will be released on ios and android.
+The sticks are connected through three types of joints represented by circles:
 
-Follow [Supernapie on twitter] to keep up with the news.
+- fixed + clickable
+- fixed + not clickable
+- not fixed + not clickable
+
+When you click the first type, it comes loose and the stick starts swinging. The second type can only become unfixed by touching it with another circle.
+
+The goal is to let all the sticks fall off the screen. Only then you can proceed to the next puzzle.
