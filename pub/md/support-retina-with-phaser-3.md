@@ -1,6 +1,6 @@
 **You can support retina devices and other pixel ratio's in your Phaser 3 games. In this short blogpost i will explain how and give some tips on how to make your art super crisp.**
 
-**Warning before you continue: In Phaser 3.16 the scale manager will be introduced. So when that is released i will update the code for this tutorial. Stay tuned ;)**
+**Update: I updated the code for the Phaser 3.16 scale manager. Some concepts of this tutorial stayed the same and some changed a little bit. Things might still change in the future or not apply to your specific scaling needs. In that case i recommend to familiarize yourself with [how the scalemanager works](https://github.com/photonstorm/phaser/blob/master/src/scale/ScaleManager.js).**
 
 Last week i launched [a poll on Facebook](https://www.facebook.com/supernapie/photos/a.2105297896420965.1073741828.2098916053725816/2123499387934149/?type=1&theater) and asked wether i should use pixel or vector artwork for my next game. The vector squid won the poll and now i was scratching my head on how to make it look not to blurry on retina devices. Pixelart is not that difficult, but vectorart is a different beast. But let's get on with the tech right away.
 
@@ -47,14 +47,16 @@ Luckily Phaser 3 has something for this that we can set in our **game config**. 
 By setting this we also need to multiply the game width and height with the `window.devicePixelRatio`. And then the game config becomes something like this:
 
 ```
-let config = {
+var config = {
     type: Phaser.WEBGL,
-    parent: 'phaser-game',
-    width: window.innerWidth * window.devicePixelRatio, // set game width by multiplying window width with devicePixelRatio
-    height: window.innerHeight * window.devicePixelRatio, // set game height by multiplying window height with devicePixelRatio
     backgroundColor: '#969fa3',
     pixelArt: true,
-    zoom: 1 / window.devicePixelRatio, // Set the zoom to the inverse of the devicePixelRatio
+    scale: {
+        mode: Phaser.Scale.NONE, // we will resize the game with our own code (see Boot.js)
+        width: window.innerWidth * window.devicePixelRatio, // set game width by multiplying window width with devicePixelRatio
+        height: window.innerHeight * window.devicePixelRatio, // set game height by multiplying window height with devicePixelRatio
+        zoom: 1 / window.devicePixelRatio // Set the zoom to the inverse of the devicePixelRatio
+    },
     scene: [
         Boot,
         Preloader,
@@ -67,19 +69,21 @@ let config = {
 
 ### Making the game responsive
 
-Right now our game fills the entire browser window, but when the window resizes the game doesn't scale. To solve this i added the following code in the Boot.js file in the demo:
+Right now our game fills the entire browser window, but when the window resizes the game doesn't scale, because we set the scale mode to `NONE`. To solve this i added the following code in the Boot.js file in the demo:
 
 ```
-// This will make your game responsive.
-window.onresize = () => {
-    // Resize game configs.
+window.addEventListener('resize', this.resize.bind(this));
+```
+
+and 
+
+```
+resize ()
+{
     let w = window.innerWidth * window.devicePixelRatio;
     let h = window.innerHeight * window.devicePixelRatio;
-    this.sys.game.renderer.resize(w, h, 1.0);
-    this.sys.game.config.width = w;
-    this.sys.game.config.height = h;
-    this.sys.canvas.style.width = window.innerWidth + 'px';
-    this.sys.canvas.style.height = window.innerHeight + 'px';
+    // manually resize the game with the Phaser 3.16 scalemanager
+    this.scale.resize(w, h);
     // Check which scene is active.
     for (let scene of this.scene.manager.scenes) {
         if (scene.scene.settings.active) {
@@ -103,11 +107,9 @@ resizeField(w, h) {
 }
 ```
 
-One thing to note here is that when we set the width and the height of the canvas, we do not multiply it by the `window.devicePixelRatio`.
-
 ### Super crisp
 
-The last tip i will give you is to round the position of the camera. This will prevent pixels from being drawn at half coördinates. It will also help stick your tilemaps together.
+The last tip i will give you is to round the position of the camera. This will prevent pixels from being drawn at half coördinates.
 
 ```
 this.cameras.main.setRoundPixels(true);
