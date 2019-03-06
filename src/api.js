@@ -22,6 +22,7 @@ const GamesAPI = {
 
 const BlogAPI = {
   posts: [
+    { url: 'the-making-of-dead-sticks', name: "The making of dead sticks", description: "Last month i added a bunch of levels to dead sticks. Here are some insights from the level design process.", date: '2019-03-06'},
     { url: 'procedural-generated-maze-in-phaser-3', name: "Procedural generated maze in Phaser 3", description: "A nice way to add variety to your game is random levels. In this article i will explain how i made the mazes for Esciit and Acid Sink.", date: '2019-01-18'},
     { url: 'hiding-the-mouse-in-a-ux-friendly-way', name: "Hiding the mouse in a ux friendly way", description: "When building a game that only uses the keyboard, you may want to hide the mouse. Here is how to do it properly!", date: '2018-10-24'},
     { url: 'ludum-dare-42-post-mortem', name: "Ludum Dare 42 post mortem", description: "I submitted my second Ludum Dare entry last month. This time with the help of my brother Thomas, who did the sound and music. Here are some afterthoughts about how it went.", date: '2018-09-12'},
