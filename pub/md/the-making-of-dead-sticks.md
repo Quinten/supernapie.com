@@ -47,4 +47,6 @@ And when i am done tweaking it the level looks like this:
 
 ![Not all circles clickable](/img/dead-sticks-not-all-clickable.jpg "Not all circles clickable")
 
-That is all i wanted to share today.
+That is all i wanted to share today. I hope you all like the new levels. Maybe next time i have something to share about a brand new project.
+
+Stay tuned...
