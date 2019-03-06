@@ -1,4 +1,6 @@
-**'dead sticks' is an abstract and minimalisitc puzzle game with physics based on verlet integration.**
+**'dead sticks' is an abstract and minimalisitc puzzle game with physics based on verlet integration.** 
+
+**Now with more then 30 new puzzles!**
 
 'dead sticks' comes from 'dead stick landing' which means landing an aircraft when the engine broke down.
 
