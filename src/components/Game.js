@@ -19,12 +19,12 @@ const Game = (props) => {
             description = result;
             ReactDOM.render(
                 <ReactMarkdown source={description} />,
-                document.getElementById('game-description')
+                document.getElementById('item-description')
             )
         });
 
     return (
-        <div itemScope itemType="http://schema.org/VideoGame" className="game-details">
+        <div itemScope itemType="http://schema.org/VideoGame" className="item-details">
             <Helmet>
                 <title>{game.name} - a Supernapie game</title>
                 <meta property="og:title" content={game.name+' - a Supernapie game'} />
@@ -38,7 +38,7 @@ const Game = (props) => {
                 <meta property="og:image:type" content="image/jpeg" />
                 <meta property="fb:app_id" content="1418768124974325" />
             </Helmet>
-            <div className="game-poster">
+            <div className="item-poster">
                 <a href={(game.link) ? game.link : 'https://'+game.url+'.supernapie.com'} itemProp="installUrl">
                     <img src={'/img/'+game.url+'-poster.jpg'} alt={'Play '+game.name} title={game.cta + ' ' + game.name} itemProp="image" />
                 </a>
@@ -49,8 +49,8 @@ const Game = (props) => {
                     <span>{game.cta} game</span>
                 </a>
             </div>
-            <div className="game-title-flex">
-                <div className="game-title">
+            <div className="item-title-flex">
+                <div className="item-title">
                     <h1 itemProp="name">{game.name}</h1>
                 </div>
                 <div className="game-specs">
@@ -59,7 +59,7 @@ const Game = (props) => {
                     {game.specs.desktop && <span title="Desktop"><i className="fas fa-desktop"></i></span>}
                 </div>
             </div>
-            <div id="game-description" itemProp="description"></div>
+            <div id="item-description" itemProp="description"></div>
             <div className="youtube-list">
                 {!!game.twitch.length && <h3>{game.name} on Twitch</h3>}
                 {game.twitch.map(y => (

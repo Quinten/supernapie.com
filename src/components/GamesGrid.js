@@ -4,16 +4,16 @@ import { Link } from 'react-router-dom'
 const GamesGrid = (props) => {
     return (
         <div>
-            <ul className="games-list">
+            <ul className="items-list vertical">
                 {
                     props.games.map(g => (
                         <li key={g.url}>
-                            <div className="game-tile" itemScope itemType="http://schema.org/VideoGame">
+                            <div className="item-tile" itemScope itemType="http://schema.org/VideoGame">
                                 <Link to={`/games/${g.url}`} className="thumb" itemProp="url">
                                     <img src={'/img/'+g.url+'-thumb.jpg'} alt={g.name} title={g.name} itemProp="image" />
                                 </Link>
-                                <div className="game-title-flex">
-                                    <div className="game-title">
+                                <div className="item-title-flex">
+                                    <div className="item-title">
                                         <Link to={`/games/${g.url}`} itemProp="url">
                                             <span itemProp="name">{g.name}</span>
                                         </Link>

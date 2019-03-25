@@ -19,12 +19,12 @@ const Blog = (props) => {
             description = result;
             ReactDOM.render(
                 <ReactMarkdown source={description} />,
-                document.getElementById('game-description')
+                document.getElementById('item-description')
             )
         });
 
     return (
-        <div className="game-details">
+        <div className="item-details">
             <Helmet>
                 <title>{blog.name} | Supernapie blog</title>
                 <meta property="og:title" content={blog.name+' | Supernapie blog'} />
@@ -32,22 +32,31 @@ const Blog = (props) => {
                 <meta property="og:url" content={'https://supernapie.com/blog/'+blog.url} />
                 <meta name="description" content={blog.description} />
                 <meta property="og:description" content={blog.description} />
+                {blog.poster ? (
                 <meta property="og:image" content={'https://supernapie.com/img/'+blog.url+'-poster.jpg'} />
+                ) : (
+                <meta property="og:image" content={'https://supernapie.com/img/supernapie-poster.jpg'} />
+                )}
                 <meta property="og:image:width" content="1920" />
                 <meta property="og:image:height" content="640" />
                 <meta property="og:image:type" content="image/jpeg" />
                 <meta property="fb:app_id" content="1418768124974325" />
             </Helmet>
-            <div className="game-poster">
+
+            {blog.poster ? (
+            <div className="item-poster">
                 <img src={'/img/'+blog.url+'-poster.jpg'} alt={blog.name} title={blog.name} />
             </div>
-            <div className="game-title-flex">
-                <div className="game-title">
+            ) : (
+            ''
+            )}
+            <div className="item-title-flex">
+                <div className="item-title">
                     <h1>{blog.name}</h1>
                 </div>
             </div>
             <p className="blog-date">{(new Date(blog.date)).toLocaleDateString('en', {year: 'numeric', month: 'long', day: 'numeric'})}</p>
-            <div id="game-description"></div>
+            <div id="item-description"></div>
         </div>
     )
 }

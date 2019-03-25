@@ -25,7 +25,7 @@ const Home = () => {
             <meta property="og:image:type" content="image/jpeg" />
             <meta property="fb:app_id" content="1418768124974325" />
         </Helmet>
-        <div className="game-poster">
+        <div className="item-poster">
             <img src={'/img/supernapie-world.jpg'} alt="Supernapie world" />
         </div>
         <h1 className="ta-center"><Logo /> <span>Supernapie</span></h1>
@@ -37,12 +37,12 @@ const Home = () => {
                 <span>View all games</span>
             </Link>
         </p>
-        <h2 className="ta-center">With Tech Noodles</h2>
+        <h2 className="ta-center">Fried Blog Noodles</h2>
         <BlogsGrid blogs={BlogAPI.latest()} />
         <p className="ta-center">
             <Link to={'/blog'} className="btn">
                 <i className="fas fa-pencil-alt"></i>
-                <span>View all blogposts</span>
+                <span>View all blog posts</span>
             </Link>
         </p>
       </div>
