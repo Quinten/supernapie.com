@@ -19,6 +19,9 @@
         <loc>https://supernapie.com/games/esciit</loc>
     </url>
     <url>
+        <loc>https://supernapie.com/games/voidcrab</loc>
+    </url>
+    <url>
         <loc>https://supernapie.com/games/ibe</loc>
     </url>
     <url>
@@ -40,10 +43,10 @@
         <loc>https://supernapie.com/games/graves-of-salad</loc>
     </url>
     <url>
-        <loc>https://supernapie.com/games/voidcrab</loc>
+        <loc>https://supernapie.com/blog</loc>
     </url>
     <url>
-        <loc>https://supernapie.com/blog</loc>
+        <loc>https://supernapie.com/blog/the-making-of-dead-sticks</loc>
     </url>
     <url>
         <loc>https://supernapie.com/blog/procedural-generated-maze-in-phaser-3</loc>

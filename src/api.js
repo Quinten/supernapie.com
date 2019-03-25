@@ -40,4 +40,4 @@ const BlogAPI = {
   }
 }
 
-export {GamesAPI, BlogAPI}
+module.exports = {GamesAPI, BlogAPI}
