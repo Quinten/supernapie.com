@@ -3,6 +3,8 @@
 const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 const extractLess = new ExtractTextPlugin({
     //filename: '[name].[contenthash].css',
@@ -29,8 +31,8 @@ module.exports = (env, argv) => {
         entry: ['babel-polyfill', 'whatwg-fetch', './src/index.js'],
 
         output: {
-            path: path.resolve(__dirname, 'pub/build'),
-            publicPath: '/build/',
+            path: path.resolve(__dirname, 'pub'),
+            publicPath: '/',
             filename: 'project.bundle.js'
         },
 
@@ -120,6 +122,11 @@ module.exports = (env, argv) => {
                 })
             ]
         };
+
+        webpackConfig.plugins.push(new CleanWebpackPlugin());
+        webpackConfig.plugins.push(new CopyPlugin([
+            { from: 'assets', to: '' },
+        ]));
     }
 
     return webpackConfig;
