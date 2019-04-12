@@ -22,6 +22,7 @@ const GamesAPI = {
 
 const BlogAPI = {
   posts: [
+    { url: 'april-progress', name: "April progress", description: "Quietly working on random stuff seems to be the theme this month.", date: '2019-04-13', poster: false},
     { url: 'oops-no-more-thumbnails-on-the-blog', name: "Oops, no more thumbnails on the blog", description: "This is not an error message, but an actual blogpost title.", date: '2019-03-25', poster: false},
     { url: 'the-making-of-dead-sticks', name: "The making of dead sticks", description: "Last month i added a bunch of levels to dead sticks. Here are some insights from the level design process.", date: '2019-03-06', poster: true},
     { url: 'procedural-generated-maze-in-phaser-3', name: "Procedural generated maze in Phaser 3", description: "A nice way to add variety to your game is random levels. In this article i will explain how i made the mazes for Esciit and Acid Sink.", date: '2019-01-18', poster: true},
