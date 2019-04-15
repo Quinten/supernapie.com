@@ -22,6 +22,7 @@ const GamesAPI = {
 
 const BlogAPI = {
   posts: [
+    { url: 'to-mute-or-not-to-mute', name: "To mute or not to mute", description: "Still struggling with the question wether or not i should add mute buttons to my games.", date: '2019-04-15', poster: false},
     { url: 'april-progress', name: "April progress", description: "Quietly working on random stuff seems to be the theme this month.", date: '2019-04-13', poster: false},
     { url: 'oops-no-more-thumbnails-on-the-blog', name: "Oops, no more thumbnails on the blog", description: "This is not an error message, but an actual blogpost title.", date: '2019-03-25', poster: false},
     { url: 'the-making-of-dead-sticks', name: "The making of dead sticks", description: "Last month i added a bunch of levels to dead sticks. Here are some insights from the level design process.", date: '2019-03-06', poster: true},
