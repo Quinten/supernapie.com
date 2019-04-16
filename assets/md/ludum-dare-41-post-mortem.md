@@ -1,5 +1,3 @@
-**About a month ago, I participated for the first time with the Ludum Dare game jam. Here is what i learned from it.**
-
 For those of you who do not know what [Ludum Dare](https://ldjam.com) is, it is an online event where people all over the world try to create a video game in one weekend. The event takes place every four months and has been recurring since 2002.
 
 I did some other game jams before, but never joined a Ludum Dare event. I knew about it, but somehow it never fit my schedule. But about a month ago, i found out there was one happening and i had a some time during the weekend and thought why not. That was like sunday afternoon. So lesson one is: **write the date on your calendar**.

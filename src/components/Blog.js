@@ -56,6 +56,7 @@ const Blog = (props) => {
                 </div>
             </div>
             <p className="blog-date">{(new Date(blog.date)).toLocaleDateString('en', {year: 'numeric', month: 'long', day: 'numeric'})}</p>
+            <p><strong>{blog.description}</strong></p>
             <div id="item-description"></div>
         </div>
     )

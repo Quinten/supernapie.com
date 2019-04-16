@@ -1,5 +1,3 @@
-**Last month i added a bunch of levels to dead sticks. Here are some insights from the level design process.**
-
 ### TLDR
 
 [Play the dead sticks game](https://dead-sticks.supernapie.com/)

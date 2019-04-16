@@ -1,5 +1,3 @@
-**Quietly working on random stuff seems to be the theme this month.**
-
 I think more than happiness i crave a life where i am in control. (This is a side note.)
 
 After finishing dead sticks i am working on some random stuff this month. None of which is ready to be public and pirated right now. It seemed like i was steerless for a moment, yet i am doing stuff i like and i think needs doing, besides the dayjob that is, which is a little chaotic at the moment.

@@ -1,5 +1,3 @@
-**A nice way to add variety to your game is random levels. In this article i will explain how i made the mazes for Esciit and Acid Sink.**
-
 ### TLDR
 
 [Play the demo](https://quinten.github.io/phaser3-maze-demo/)

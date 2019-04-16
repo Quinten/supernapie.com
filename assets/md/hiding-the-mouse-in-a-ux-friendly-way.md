@@ -1,5 +1,3 @@
-**When building a game that only uses the keyboard, you may want to hide the mouse. Here is how to do it properly!**
-
 Let's assume you are building a html5 game that only uses the keyboard. You are testing your game and suddenly you get the idea to hide the mouse cursor, because it is sitting over your nice graphics and the player isn't going to need it anyway.
 
 You have a reference to your canvas element. In Phaser 3 you can grab it from any scene with:

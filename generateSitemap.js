@@ -1,6 +1,7 @@
 const fs = require('fs');
 
-const {GamesAPI, BlogAPI} = require('./src/api');
+const games = require('./src/games');
+const posts = require('./src/posts');
 const sitemapOut = './pub/sitemap.xml';
 
 let sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
@@ -16,7 +17,7 @@ let sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
     </url>
 `;
 
-GamesAPI.games.forEach(function (game) {
+games.forEach(function (game) {
     sitemapXml += `    <url>
         <loc>https://supernapie.com/games/${game.url}</loc>
     </url>
@@ -28,7 +29,7 @@ sitemapXml +=`    <url>
     </url>
 `;
 
-BlogAPI.posts.forEach(function (blog) {
+posts.forEach(function (blog) {
     sitemapXml += `    <url>
         <loc>https://supernapie.com/blog/${blog.url}</loc>
     </url>

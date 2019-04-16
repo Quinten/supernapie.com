@@ -1,5 +1,3 @@
-**In this blogpost i'll explain how you can load the assets of your Phaser 3 game as data URI's, without having to rely on xhr requests. I'll cover images, spritesheets and audio.**
-
 Loading assets (like images and audio) in [Phaser 3](https://github.com/photonstorm/phaser) is achieved by making xhr requests. This is fine if you are building a game for the web, but if your game isn't hosted on a server and needs to be loaded from the local filesystem, this will cause all kinds of troubles. Javascript is not allowed to make this kind of request when you are opening the html file with the `file://` scheme.
 
 We can solve this with [data URI](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs)'s. They are basicly complete images (or other files) that are represented by base64 encoded strings, which can be merged into your code rather then being loaded as external files. Here is a small example of such code:

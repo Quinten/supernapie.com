@@ -1,5 +1,3 @@
-**If your are running your html5 game in an iframe, you might run into the problem where your keyboard input loses focus, when you click outside the iframe. Here is a quick tip to circumvent this.**
-
 When you upload your html5 game to any game portal, the portal will most likely display your game in an iframe. An iframe is a seperate webpage inside of another webpage. The scripts from the document inside the iframe can't reach the scripts of the outer webpage and vice versa. They even have a seperate `window` object. This means that when you add event listeners to the `window` object inside the iframe and the user puts the focus on the outer `window` object, your events won't trigger anymore. If your game uses the keyboard as it's primary input and the player clicks outside the iframe, he will lose control over the game.
 
 To overcome this we need to put the focus back to the inner `window` object, when the user clicks on our game canvas. To achieve this i use this little script in all of my games:

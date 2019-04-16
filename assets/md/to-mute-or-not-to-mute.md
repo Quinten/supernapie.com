@@ -1,5 +1,3 @@
-**Still struggling with the question wether or not i should add mute buttons to my games.**
-
 Yesterday i had an interesting topic brought up by a kind player in [the comment section of dead sticks](https://itch.io/post/732651) over at itch.io. The player, who called himself [Computers Don't Compost](https://itch.io/profile/computers-dont-compost), was making a feature request for a mute button, so he could listen to his own music while playing the game. I thought that was a very valid point, but yet i went ahead and replied with this cocky statement:
 
 > I understand your point.  

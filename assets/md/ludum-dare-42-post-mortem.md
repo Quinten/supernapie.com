@@ -1,5 +1,3 @@
-**I submitted my second Ludum Dare entry last month. This time with the help of my brother Thomas, who did the sound and music. Here are some afterthoughts about how it went.**
-
 In contrast to what i wrote in my [previous post](https://supernapie.com/blog/ludum-dare-41-post-mortem) about the [Ludum Dare game jam](https://ldjam.com), i wrote the date on my calendar and i knew i was gonna hit the ground running when the weekend of the online event came. Before it even started i was checking the site a lot for updates and i was able to join in on the theme voting rounds. Which was very exciting! You are constantly thinking: "If this would be the theme, what would i build with it?" and "Oh my god, i hope this theme doesn't make it!"
 
 Another thing i did beforehand was trying to make a game jam survival kit. I really mean trying, because i only prepared a hand full of color swatches and a 256x256 tileset that was only 1/3 full. The swatches were really cool. I knew i wanted to do something with peach pink and radioactive green. But i had no idea if that was gonna represent slime or radioactive waste or acid rain or something else...

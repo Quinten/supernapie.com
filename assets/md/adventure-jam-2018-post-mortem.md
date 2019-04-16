@@ -1,5 +1,3 @@
-**Last May i joined Adventure Jam for the second year in a row. This year's entry was a little weird and experimental, but i still learned a lot from it...**
-
 For last year's Adventure Jam i made [Dave's Disk](https://gamejolt.com/games/daves-disk/255500). The game was well received. It was picked up by some streamers and it even made it to 'Game of the week' in [Phaser's newsletter](https://madmimi.com/p/03594a). Not bad for a game made in two weeks.
 
 But it was a platformer and some people argued that a platformer is not a real adventure game. Although the jam rules state that you can use any genre for the jam, most definitions on the old internet are narrowed down to point-and-click and text adventures. Since the genre 'text adventure' has the word 'adventure' in it's name, i deceided to make a text adventure this year. So for two weeks in spring i was writing out a story about [Ibe](https://gamejolt.com/games/Ibe/338381).
