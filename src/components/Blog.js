@@ -1,5 +1,6 @@
 import React from 'react'
 const ReactDOM = require('react-dom')
+import { Link } from 'react-router-dom'
 const ReactMarkdown = require('react-markdown')
 import { BlogAPI } from '../api'
 import { Helmet } from 'react-helmet'
@@ -10,6 +11,8 @@ const Blog = (props) => {
     if (!blog) {
         return <div>Sorry, but the blog post was not found</div>
     }
+
+    const previousBlog = BlogAPI.getPrevious(blog.url);
 
     let description = blog.description;
 
@@ -47,9 +50,7 @@ const Blog = (props) => {
             <div className="item-poster">
                 <img src={'/img/'+blog.url+'-poster.jpg'} alt={blog.name} title={blog.name} />
             </div>
-            ) : (
-            ''
-            )}
+            ) : ('')}
             <div className="item-title-flex">
                 <div className="item-title">
                     <h1>{blog.name}</h1>
@@ -58,6 +59,14 @@ const Blog = (props) => {
             <p className="blog-date">{(new Date(blog.date)).toLocaleDateString('en', {year: 'numeric', month: 'long', day: 'numeric'})}</p>
             <p><strong>{blog.description}</strong></p>
             <div id="item-description"></div>
+            <hr />
+            {previousBlog ? (
+            <div className="ta-center">
+                <p><strong>{previousBlog.relation}</strong></p>
+                <p><Link to={`/blog/${previousBlog.url}`} className="nav-link">{previousBlog.name} - {(new Date(previousBlog.date)).toLocaleDateString('en', {year: 'numeric', month: 'long', day: 'numeric'})}</Link></p>
+            </div>
+            ) : ('')}
+
         </div>
     )
 }

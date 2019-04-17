@@ -24,6 +24,7 @@ const BlogsList = () => {
             <h1 className="ta-center"><i className="fas fa-pencil-alt"></i> <span>Blog</span></h1>
             <p>{description}</p>
             <BlogsGrid blogs={BlogAPI.all()} />
+            <p className="ta-center">Seems like you hit rock bottom...</p>
         </div>
     );
 }
