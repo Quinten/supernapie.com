@@ -15,6 +15,7 @@ const Main = () => (
                 <Route path='/contact' component={Contact}/>
             </Switch>
         </div>
+        <p>&nbsp;</p>
     </main>
 )
 
