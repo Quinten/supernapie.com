@@ -19,8 +19,28 @@ h2, h3, h4, h5, h6 {
     font-family: 'Nunito', sans-serif;
 }
 
+hr {
+    margin: 4rem 0;
+    border: 0;
+    border-top: 1px @color-theme-hint solid;
+}
+
 a {
     .lib-link();
+
+    &.nav-link {
+
+        .lib-link(
+            @_link-color: @color-theme-highlight,
+            @_link-text-decoration: none,
+            @_link-color-visited: @color-theme-highlight,
+            @_link-text-decoration-visited: none,
+            @_link-color-hover: @color-theme-highlight-shade,
+            @_link-text-decoration-hover: none,
+            @_link-color-active: @color-theme-highlight-shade,
+            @_link-text-decoration-active: none
+        );
+    }
 }
 
 .ta-center {
