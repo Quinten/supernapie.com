@@ -1,5 +1,12 @@
 [
   {
+    "url": "two-way-binding",
+    "name": "Two way binding",
+    "description": "Ultimately code always has to be reusable.",
+    "date": "2019-04-18",
+    "poster": false
+  },
+  {
     "url": "dungeon-master-is-not-a-career-option",
     "name": "Dungeon master is not a career option",
     "description": "Recently it occured to me that i don't know any professional dungeon masters.",
