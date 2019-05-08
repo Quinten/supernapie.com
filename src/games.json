@@ -1,5 +1,19 @@
 [
   {
+    "url": "fish-hop",
+    "name": "Fish Hop",
+    "cta": "Play",
+    "link": false,
+    "specs": {
+      "mobile": true,
+      "desktop": false,
+      "gamepad": false
+    },
+    "youtube": [],
+    "twitch": [],
+    "description": "Escape the barbecue! Help a fish escape a hot grill by jumping on the clothesline..."
+  },
+  {
     "url": "dead-sticks",
     "name": "dead sticks",
     "cta": "Play",
