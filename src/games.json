@@ -1,5 +1,19 @@
 [
   {
+    "url": "nutty-twins",
+    "name": "Nutty Twins",
+    "cta": "Play",
+    "link": false,
+    "specs": {
+      "mobile": false,
+      "desktop": true,
+      "gamepad": true
+    },
+    "youtube": [],
+    "twitch": [],
+    "description": "A puzzle platformer about two brothers who are thick as thieves."
+  },
+  {
     "url": "fish-hop",
     "name": "Fish Hop",
     "cta": "Play",
