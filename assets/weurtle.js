@@ -1,6 +1,14 @@
 (function () {
     var urls = [
         {
+            old: 'https://www.kongregate.com/games/qubecity/nutty-twins',
+            new: 'https://supernapie.com/games/nutty-twins'
+        },
+        {
+            old: 'https://html5.gamedistribution.com/88386bb30c2a4f1085d645959365f6fe/',
+            new: 'https://supernapie.com/games/fish-hop'
+        },
+        {
             old: 'https://supernapie.itch.io/esciit',
             new: 'https://supernapie.com/games/esciit'
         },
@@ -35,6 +43,10 @@
         {
             old: 'https://quinten.github.io/graves-of-salad/',
             new: 'https://supernapie.com/games/graves-of-salad'
+        },
+        {
+            old: 'https://supernapie.itch.io/voidcrab',
+            new: 'https://supernapie.com/games/voidcrab'
         }
     ];
     var links = document.querySelectorAll('a');
