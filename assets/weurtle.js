@@ -21,6 +21,10 @@
             new: 'https://supernapie.com/games/ibe'
         },
         {
+            old: 'https://quinten.github.io/soccer-slasher/',
+            new: 'https://supernapie.com/games/soccer-slasher'
+        },
+        {
             old: 'https://quinten.github.io/unmatch/',
             new: 'https://supernapie.com/games/unmatch'
         },
