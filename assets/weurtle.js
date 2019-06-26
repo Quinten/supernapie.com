@@ -13,11 +13,11 @@
             new: 'https://supernapie.com/games/esciit'
         },
         {
-            old: 'https://quinten.github.io/acid-sink/',
+            old: 'https://www.kongregate.com/games/qubecity/acid-sink',
             new: 'https://supernapie.com/games/acid-sink'
         },
         {
-            old: 'https://quinten.github.io/ibe/',
+            old: 'https://gamejolt.com/games/Ibe/338381',
             new: 'https://supernapie.com/games/ibe'
         },
         {
@@ -25,7 +25,7 @@
             new: 'https://supernapie.com/games/soccer-slasher'
         },
         {
-            old: 'https://quinten.github.io/unmatch/',
+            old: 'https://www.kongregate.com/games/qubecity/unmatch',
             new: 'https://supernapie.com/games/unmatch'
         },
         {
@@ -33,11 +33,11 @@
             new: 'https://supernapie.com/games/untitled'
         },
         {
-            old: 'https://quinten.github.io/daves-disk/',
+            old: 'https://gamejolt.com/games/daves-disk/255500',
             new: 'https://supernapie.com/games/daves-disk'
         },
         {
-            old: 'https://quinten.github.io/dead-sticks/',
+            old: 'https://www.kongregate.com/games/qubecity/dead-sticks',
             new: 'https://supernapie.com/games/dead-sticks'
         },
         {
