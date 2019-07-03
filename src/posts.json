@@ -1,5 +1,12 @@
 [
   {
+    "url": "a-formula-of-success",
+    "name": "A formula of success",
+    "description": "Disclaimer: this is not a formula 'for' success. It is not a step-by-step guide how to achieve success. Instead it is philosophical approach to the concept of success.",
+    "date": "2019-07-03",
+    "poster": false
+  },
+  {
     "url": "ludum-dare-44-post-mortem",
     "name": "Ludum Dare 44 post mortem",
     "description": "Last weekend was LD jam weekend. Here is my report.",
