@@ -15,7 +15,11 @@
       "removeComments": false
     },
     "skipThirdPartyRequests": true,
-    "include": ["/", "/games", "/blog"]
+    "include": [
+      "/",
+      "/games",
+      "/blog"
+    ]
   },
   "repository": {
     "type": "git",
