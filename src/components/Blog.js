@@ -59,6 +59,20 @@ const Blog = (props) => {
             <p className="blog-date">{(new Date(blog.date)).toLocaleDateString('en', {year: 'numeric', month: 'long', day: 'numeric'})}</p>
             <p><strong>{blog.description}</strong></p>
             <div id="item-description"></div>
+            <div className="youtube-list">
+                {blog.twitch && blog.twitch.map(y => (
+                    <div key={y} className="youtube-item">
+                        <iframe width="560" height="315" src={"https://player.twitch.tv/?autoplay=false" + y} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
+                    </div>
+                ))}
+            </div>
+            <div className="youtube-list">
+                {blog.youtube && blog.youtube.map(y => (
+                    <div key={y} className="youtube-item">
+                        <iframe width="560" height="315" src={"https://www.youtube.com/embed/" + y} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
+                    </div>
+                ))}
+            </div>
             <hr />
             {previousBlog ? (
             <div className="ta-center">
