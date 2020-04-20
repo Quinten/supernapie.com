@@ -1,5 +1,19 @@
 [
   {
+    "url": "hommel",
+    "name": "hommel",
+    "cta": "Play",
+    "link": "https://quinten.github.io/hommel/",
+    "specs": {
+      "mobile": false,
+      "desktop": true,
+      "gamepad": true
+    },
+    "youtube": [],
+    "twitch": [],
+    "description": "A short game where you have to survive as a bumble bee."
+  },
+  {
     "url": "nutty-twins",
     "name": "Nutty Twins",
     "cta": "Play",
