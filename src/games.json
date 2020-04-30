@@ -1,5 +1,19 @@
 [
   {
+    "url": "mount-hop",
+    "name": "Mount Hop",
+    "cta": "Play",
+    "link": false,
+    "specs": {
+      "mobile": false,
+      "desktop": true,
+      "gamepad": true
+    },
+    "youtube": [],
+    "twitch": [],
+    "description": "Message for a future mountaineer"
+  },
+  {
     "url": "gravity-food",
     "name": "Gravity food",
     "cta": "Play",
