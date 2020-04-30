@@ -100,7 +100,7 @@
   {
     "url": "esciit",
     "name": "Esciit",
-    "cta": "Buy",
+    "cta": "Download",
     "link": "https://supernapie.itch.io/esciit",
     "specs": {
       "mobile": false,
@@ -113,7 +113,7 @@
   },
   { "url": "voidcrab",
     "name": "Voidcrab",
-    "cta": "Buy",
+    "cta": "Download",
     "link": "https://supernapie.itch.io/voidcrab",
     "specs": {
       "mobile": false,

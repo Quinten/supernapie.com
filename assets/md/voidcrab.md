@@ -10,4 +10,4 @@ Arrows to move.
 Space bar to jump.  
 Esc for menu and stats.  
 
-Check out the [itch.io gamepage](https://supernapie.itch.io/voidcrab) for more info and videos.
+Download this game on [itch.io](https://supernapie.itch.io/voidcrab).
