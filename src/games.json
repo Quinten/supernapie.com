@@ -1,5 +1,19 @@
 [
   {
+    "url": "alpha-evader",
+    "name": "Alpha Evader",
+    "cta": "Play",
+    "link": false,
+    "specs": {
+      "mobile": false,
+      "desktop": true,
+      "gamepad": true
+    },
+    "youtube": [],
+    "twitch": [],
+    "description": "Escape with invisibility super powers"
+  },
+  {
     "url": "mount-hop",
     "name": "Mount Hop",
     "cta": "Play",
