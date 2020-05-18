@@ -18,11 +18,11 @@ Also (and this is probably the main reason) when i notice something unexpected, 
 
 And for bonus points: writing your own game engine is a lot of fun.
 
-### Whatever. Where is it? So WE can make fun of it.
+### Whatever. Where is it? So we can make fun of it.
 
 The project is called **Verf** and you can find it on [github](https://github.com/Quinten/verf) and [npm](https://www.npmjs.com/package/verf). Verf means paint in Dutch and 'verve' means also spirit of enthousiasm in English.
 
 For the moment there is no webgl support and it renders everything on the canvas 2d context. Which is good enough (and sometimes even more suited) for the games i make and it is also a little easier to start with.
 
-It is very young project (probably also naive) so bear with me as i still need to add a lot of features. But in the meantime you can check out the [examples](https://quinten.github.io/verf/examples/) to see what all ready got implemented.
+It is a very young project (probably also naive) so bear with me as i still need to add a lot of features. But in the meantime you can check out the [examples](https://quinten.github.io/verf/examples/) to see what already got implemented.
 
