@@ -10,7 +10,7 @@ Create a bookmark in your browser with a funny name and paste the following scri
 javascript:(_=>{import('https://quinten.github.io/tomato-smash/index.js').then(_=>{new TomatoSmash.Game()})})()
 ```
 
-Visit a website and click the bookmarklet. Tomatoes are thrown up and when you click them with your mouse or dirty tap finger and hey get smashed onto the page. (Works on mobile too.).
+Visit a website and click the bookmarklet. Tomatoes are thrown up and when you click them with your mouse or dirty tap finger and they get smashed onto the page. (Works on mobile too.).
 
 ### Links
 
@@ -18,4 +18,4 @@ The game was made for [Bookmarklet Jam](https://itch.io/jam/bookmarklet-jam).
 
 You can also check out the [source-code](https://github.com/Quinten/tomato-smash).
 
-It was the first time i used my new [Verf HTML5 game framework](https://github.com/Quinten/verf) in a jam.
+It was the first time i used my [Verf HTML5 game framework](https://github.com/Quinten/verf) in a jam.
