@@ -1,5 +1,12 @@
 [
   {
+    "url": "tomato-smash",
+    "name": "Tomato Smash for Bookmarklet Jam",
+    "description": "Throw tomatoes at websites! This weeks game is a bookmarklet!",
+    "date": "2020-05-29",
+    "poster": true
+  },
+  {
     "url": "may-2020-update",
     "name": "May 2020 update",
     "description": "As always the gamedev bug gets me in spring and this year is no exception.",
