@@ -1,5 +1,19 @@
 [
   {
+    "url": "rps",
+    "name": "rps",
+    "cta": "Play",
+    "link": "https://quinten.github.io/rps/",
+    "specs": {
+      "mobile": true,
+      "desktop": true,
+      "gamepad": true
+    },
+    "youtube": [],
+    "twitch": [],
+    "description": "Rock Paper Scissors Arcade"
+  },
+  {
     "url": "alpha-evader",
     "name": "Alpha Evader",
     "cta": "Play",
