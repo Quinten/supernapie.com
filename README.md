@@ -2,6 +2,8 @@
 
 Supernapie's game catalog
 
+**This was the first version of the website made with react**
+
 You will need node and npm: https://nodejs.org/en/
 
 Run the following commands on your local machine:
